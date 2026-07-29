@@ -2,63 +2,46 @@
 
 ## Overview
 
-This folder demonstrates basic REST API testing using Postman.
+This section of the project demonstrates basic REST API concepts using Postman.
 
-The purpose is to practice how SaaS support and implementation teams validate API communication and troubleshoot common issues.
-
-## Requests Tested
-
-### GET Request
-
-Purpose:
-
-Retrieve customer information from an API.
-
-Example:
-
-GET request returning customer data.
+The objective was to better understand how APIs support communication between business systems and how implementation or support teams investigate API-related issues during customer onboarding.
 
 ---
 
-### POST Request
+# Requests Practiced
 
-Purpose:
+## GET Request
 
-Send new customer information to an API.
-
-Example:
-
-Simulating customer onboarding data submission.
+Retrieved customer information from an API endpoint to understand how existing customer data can be accessed.
 
 ---
 
-### PUT Request
+## POST Request
 
-Purpose:
-
-Update existing customer information.
-
-Example:
-
-Simulating customer record updates.
+Submitted customer information to simulate creating a new customer record.
 
 ---
 
-### Error Testing
+## PUT Request
 
-Purpose:
+Updated an existing customer record to understand how information can be modified after onboarding.
 
-Understand how failed requests are investigated.
+---
 
-Examples:
+## Error Response Review
 
+Reviewed common HTTP responses that may occur during API requests.
+
+Examples include:
+
+- 200 OK
 - 400 Bad Request
+- 401 Unauthorized
+- 403 Forbidden
 - 404 Not Found
 
-## Skills Practiced
+---
 
-- REST API fundamentals
-- HTTP methods
-- HTTP status codes
-- Request and response analysis
-- Basic troubleshooting
+# Key Takeaways
+
+Working with Postman helped reinforce REST API fundamentals, request structure, response codes, and basic troubleshooting concepts that are commonly encountered during SaaS implementation and customer onboarding.

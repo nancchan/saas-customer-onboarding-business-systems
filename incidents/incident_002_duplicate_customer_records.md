@@ -2,36 +2,41 @@
 
 ## Summary
 
-Duplicate customer records were identified during customer data review.
+Duplicate customer records were identified during customer onboarding.
 
-This scenario demonstrates how support teams investigate data quality issues that affect CRM accuracy.
+---
 
-## Impact
+## Business Impact
 
-- Duplicate customer information created confusion.
-- CRM records required review.
-- Reporting accuracy could be affected.
+- Duplicate CRM records
+- Reporting inconsistencies
+- Additional review required before onboarding
+
+---
 
 ## Investigation
 
-Steps performed:
+- Reviewed customer names.
+- Compared email addresses.
+- Identified duplicate records.
+- Validated the cleaned dataset.
 
-1. Reviewed customer records.
-2. Compared customer names and email values.
-3. Identified repeated customer entries.
-4. Documented duplicate prevention steps.
+---
 
 ## Root Cause
 
-Duplicate records existed in the source customer data.
+Duplicate customer information existed within the source data.
+
+---
 
 ## Resolution
 
-- Removed duplicate entries from the cleaned dataset.
-- Documented duplicate prevention rules.
+Duplicate records were removed before CRM import.
+
+---
 
 ## Prevention
 
-- Validate customer records before import.
+- Validate customer data before import.
 - Review duplicate records during onboarding.
 - Maintain consistent customer identifiers.

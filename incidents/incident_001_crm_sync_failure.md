@@ -1,38 +1,46 @@
-# Incident: CRM Synchronization Failure Due to Missing Email Information
+# Incident: CRM Synchronization Failure
 
 ## Summary
 
-Customer records were not successfully mapped into the CRM because required customer information was missing.
+A customer record did not appear correctly in Salesforce after onboarding.
 
-This scenario demonstrates how a SaaS support engineer investigates customer onboarding issues by reviewing data quality, field requirements, and CRM mapping.
+---
 
-## Impact
+## Business Impact
 
-- Customer records contained incomplete information.
-- CRM records could not be created correctly.
-- Customer onboarding workflow was delayed.
+- Customer onboarding was delayed.
+- Customer information was incomplete.
+- Reporting accuracy was affected.
+
+---
 
 ## Investigation
 
-Steps performed:
+The following steps were completed:
 
-1. Reviewed customer source data.
-2. Checked required CRM fields.
-3. Identified missing email information.
-4. Compared customer data fields against CRM mapping requirements.
+1. Reviewed the customer source data.
+2. Validated required fields.
+3. Reviewed field mapping.
+4. Verified Salesforce import results.
+
+---
 
 ## Root Cause
 
-Customer records contained missing email values, preventing successful CRM record creation.
+Incorrect field mapping prevented customer information from being imported into the expected Salesforce fields.
+
+---
 
 ## Resolution
 
-- Corrected incomplete customer data.
-- Updated data validation checks.
-- Documented the troubleshooting process.
+- Corrected the mapping.
+- Re-imported the customer record.
+- Verified the imported information.
+
+---
 
 ## Prevention
 
-- Validate required fields before CRM import.
-- Maintain accurate field mappings.
-- Perform regular data quality checks.
+- Review field mappings before import.
+- Validate source data.
+- Perform a test import before larger uploads.

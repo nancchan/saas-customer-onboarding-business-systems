@@ -1,19 +1,35 @@
-# Runbook: Fix CRM Sync Failure
+# Runbook: Resolving CRM Synchronization Issues
 
-## Step 1: Check API Logs
-Look for missing required fields (email, phone)
+## Step 1
 
-## Step 2: Run SQL Validation
-Execute customer_data_validation.sql
+Review the reported issue and confirm which customer records are affected.
 
-## Step 3: Identify Failed Records
-Check CRM error logs for rejected entries
+---
 
-## Step 4: Fix Data Issues
-Correct or flag invalid customer records
+## Step 2
 
-## Step 5: Reprocess Sync
-Retry API ingestion for failed customers
+Validate the customer information using the source dataset and SQL queries.
 
-## Step 6: Monitor
-Verify CRM sync success rate returns to normal
+---
+
+## Step 3
+
+Review API requests and responses using Postman.
+
+---
+
+## Step 4
+
+Verify Salesforce field mapping and imported records.
+
+---
+
+## Step 5
+
+Correct any identified issues and repeat the import if necessary.
+
+---
+
+## Step 6
+
+Confirm the customer records appear correctly within Salesforce and document the resolution.

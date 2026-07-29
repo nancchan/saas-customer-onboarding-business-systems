@@ -1,240 +1,152 @@
-# SaaS Customer Onboarding & Support Simulation
+# SaaS Customer Onboarding & Implementation Simulation
 
-## Project Goal
+## Project Overview
 
-This project was created to develop and demonstrate practical skills used by SaaS Support Engineers, Technical Support Engineers, Application Support Analysts, and Implementation Specialists.
+This repository documents a simulated SaaS customer onboarding and implementation project created to strengthen practical skills relevant to Implementation Specialists, CRM Consultants, Technical Support Engineers, and Application Support Analysts.
 
-It simulates a customer onboarding workflow by following customer information through data validation, SQL investigation, API testing practice, Salesforce CRM configuration, reporting, and troubleshooting scenarios.
+The project follows a customer's onboarding journey from initial data collection through data validation, Salesforce CRM administration, reporting, API testing, and troubleshooting. It was built to better understand how customer information moves through different business systems and how common onboarding issues can be investigated, documented, and resolved.
 
-The project combines Excel, SQL, Postman, and Salesforce Administration concepts to demonstrate how support and implementation teams analyze customer data, investigate issues, manage CRM information, and understand how data moves between business systems.
-
-Rather than building a production application, this repository serves as a hands-on portfolio demonstrating customer data management, CRM concepts, API fundamentals, technical troubleshooting, documentation, and support workflows.
+Rather than replicating a production environment, this project focuses on the day-to-day activities commonly involved in SaaS implementations, including CRM configuration, customer data management, technical documentation, and structured problem solving.
 
 ---
 
 # Customer Onboarding Workflow
 
-Customer Information Collected  
-↓  
-Raw Customer Data (CSV)  
-↓  
-Data Cleaning & Validation (Excel)  
-↓  
-SQL Data Investigation  
-↓  
-API Concepts & Testing Practice (Postman)  
-↓  
-Salesforce CRM Data Management  
-↓  
-Salesforce Reports & Dashboards  
-↓  
-Support Troubleshooting & Documentation
+Customer Information Collection             │             ▼  Raw Customer Data (CSV)             │             ▼  Data Cleaning & Validation (Excel)             │             ▼  SQL Data Investigation             │             ▼  API Testing (Postman)             │             ▼  Salesforce CRM Administration             │             ▼  Reports & Dashboards             │             ▼  Documentation & Troubleshooting
 
 ---
 
 # Project Objectives
 
-This project demonstrates how customer onboarding data can be reviewed, validated, organized, and supported throughout a SaaS workflow.
+The objective of this project was to build practical experience with the types of activities commonly performed during a SaaS customer onboarding process.
 
-Key objectives include:
+The project includes:
 
-- Cleaning and validating customer data using Excel.
-- Investigating customer records using SQL queries.
-- Practicing REST API concepts and testing workflows using Postman.
-- Understanding CRM data structures and Salesforce administration concepts.
-- Mapping customer information into Salesforce.
-- Creating Salesforce reports and dashboards.
-- Documenting customer onboarding processes.
-- Creating simulated support scenarios involving data quality issues and system troubleshooting.
-- Practicing structured investigation and root cause analysis.
+- Validating and preparing customer data before CRM import.
+- Investigating customer records using SQL.
+- Practicing REST API concepts using Postman.
+- Configuring and managing customer data within Salesforce.
+- Creating reports and dashboards for customer visibility.
+- Documenting onboarding workflows and troubleshooting procedures.
+- Practicing structured root cause analysis using simulated customer issues.
 
 ---
 
-# Project Components
+# Project Scope
 
-## Excel Data Validation
+## Excel
 
-Used Excel to practice:
+Customer onboarding data was prepared before CRM import by:
 
-- Data cleaning
-- Duplicate identification
-- Data validation
-- Preparing CSV files for system import
-
----
-
-## SQL Data Investigation
-
-Used SQL concepts to investigate customer records.
-
-Practiced:
-
-- Filtering customer data
-- Identifying data issues
-- Reviewing records for troubleshooting purposes
+- Cleaning customer data
+- Identifying duplicate records
+- Validating required information
+- Handling missing values
+- Preparing CSV files for import
 
 ---
 
-## API Testing Practice
+## SQL
 
-Used Postman to practice:
+SQL was used to investigate customer records and support troubleshooting activities.
 
-- REST API concepts
-- HTTP methods
-- API request structure
-- Response analysis
+Examples include:
 
----
-
-# Salesforce CRM Administration Project
-
-A Salesforce Administration simulation project was completed to demonstrate customer data management and reporting workflows.
-
-Salesforce work completed:
-
-- Schema Builder
-- Object configuration review
-- Field relationship review
-- Data Import Wizard
-- Field mapping
-- Data verification
-- Reports
-- Dashboards
-
-Detailed Salesforce documentation:
-
-[Salesforce Project Documentation](Salesforce/README.md)
+- Filtering customer records
+- Identifying missing information
+- Reviewing duplicate records
+- Validating customer data
 
 ---
 
-# Implementation Documentation
+## Postman
 
-To simulate a real SaaS implementation and support workflow, additional documentation was created to demonstrate how customer data, CRM processes, testing, and troubleshooting connect together.
+Postman was used to practice REST API fundamentals and understand how customer information is exchanged between systems.
 
----
+Activities included:
 
-## Customer Onboarding Process
-
-The customer onboarding workflow documents how information moves from initial data collection through Salesforce implementation and support processes.
-
-Documentation:
-
-[Customer Onboarding Process](Documentation/customer_onboarding_flow.md)
+- GET, POST, and PUT requests
+- Reviewing JSON responses
+- Understanding HTTP status codes
+- Basic API troubleshooting
 
 ---
 
-## Troubleshooting Process
+## Salesforce CRM Administration
 
-A troubleshooting workflow was created to demonstrate how support teams investigate and resolve customer issues.
+Salesforce was used to simulate CRM administration activities commonly performed during customer onboarding.
 
-Documentation:
+Activities included:
 
-[Troubleshooting Process](Documentation/troubleshooting_flow.md)
+- Reviewing object relationships using Schema Builder
+- Understanding object configuration
+- Importing customer records using the Data Import Wizard
+- Mapping source data to Salesforce fields
+- Verifying imported records
+- Creating reports and dashboards
 
----
+Detailed documentation is available here:
 
-## Data Mapping Documentation
-
-A data mapping document was created to show how source customer information is translated into Salesforce fields before import.
-
-The mapping demonstrates:
-
-- Source data review
-- Salesforce field matching
-- Data validation
-- Import preparation
-
-File:
-
-[Data Mapping](Documentation/data_mapping.xlsx)
+Salesforce CRM Administration
 
 ---
 
-## User Acceptance Testing (UAT)
+# Project Documentation
 
-Test cases were created to validate that the customer onboarding workflow functions correctly.
+Supporting documentation was created to demonstrate how customer onboarding activities can be documented throughout an implementation.
 
-Testing includes:
+Included documentation:
 
-- Data import validation
-- Salesforce record verification
-- Report validation
-- Dashboard verification
+- Customer Onboarding Workflow
+- Troubleshooting Workflow
+- Data Mapping
+- User Acceptance Testing (UAT)
+- Incident Root Cause Analysis (RCA)
 
-File:
+### Customer Onboarding Workflow
 
-[UAT Test Cases](Documentation/UAT_test_cases.xlsx)
+Describes how customer information moves from initial collection through CRM onboarding.
 
----
-
-## Incident Root Cause Analysis (RCA)
-
-A simulated support incident was documented to demonstrate troubleshooting methodology.
-
-The RCA includes:
-
-- Issue description
-- Business impact
-- Investigation steps
-- Root cause
-- Resolution
-- Prevention steps
-
-File:
-
-[Incident RCA](Documentation/incident_RCA.md)
+Customer Onboarding Workflow
 
 ---
 
-# Skills Demonstrated
+### Troubleshooting Workflow
 
-## Salesforce
+Outlines a structured approach for investigating common onboarding and CRM issues.
 
-- Salesforce CRM Fundamentals
-- Schema Builder
-- Object Configuration
-- Field Relationships
-- Data Import Wizard
-- Field Mapping
-- Salesforce Reports
-- Salesforce Dashboards
-- CRM Data Management
-
-## Technical Support Skills
-
-- Customer Onboarding Workflows
-- Data Validation
-- Excel Data Cleaning
-- SQL Investigation
-- REST API Fundamentals
-- Postman Testing
-- Troubleshooting
-- Incident Documentation
-- Root Cause Analysis
-- Runbook Documentation
-- Business Process Understanding
-- Cross-System Problem Solving
+Troubleshooting Workflow
 
 ---
 
-# Tools Used
+### Data Mapping
 
-- Salesforce Lightning Experience
-- Salesforce Trailhead
-- Salesforce Schema Builder
-- Salesforce Object Manager
-- Salesforce Reports & Dashboards
-- Excel
-- SQL
-- Postman
-- GitHub
+Demonstrates how source customer information is mapped into Salesforce before import.
+
+Data Mapping
 
 ---
 
-# Purpose
+### User Acceptance Testing (UAT)
 
-The goal of this repository is to demonstrate the investigative approach used by SaaS support and implementation teams when customer onboarding issues occur.
+Sample test cases used to validate data imports, reports, dashboards, and onboarding activities.
 
-The project focuses on validating customer data, investigating system behavior, understanding CRM workflows, documenting technical findings, and practicing structured troubleshooting.
+UAT Test Cases
 
-This portfolio reflects practical skills commonly used in entry-level SaaS Support, Technical Support, Application Support, and Implementation roles.
+---
+
+### Incident Root Cause Analysis (RCA)
+
+Documents a simulated customer onboarding issue using a structured investigation and resolution process.
+
+Incident Root Cause Analysis
+
+---
+
+# Key Takeaways
+
+This project was created to strengthen my understanding of SaaS customer onboarding, CRM administration, and implementation workflows through hands-on practice.
+
+Working through each stage of the process helped reinforce the importance of data quality, clear documentation, structured troubleshooting, and understanding how customer information moves between business systems.
+
+The repository reflects practical learning aligned with entry-level Implementation Specialist, CRM Consultant, Technical Support, and Application Support roles while providing a foundation for continued learning as I develop my Salesforce and SaaS implementation skills.

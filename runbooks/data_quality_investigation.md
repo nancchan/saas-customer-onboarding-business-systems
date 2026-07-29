@@ -2,76 +2,43 @@
 
 ## Purpose
 
-This runbook explains how to investigate customer data issues before CRM onboarding.
+This runbook outlines a structured approach for reviewing customer information before CRM onboarding.
 
 ---
 
-# Common Issues
+## Review Checklist
 
-## Missing Information
+### Missing Information
 
-Examples:
+Review customer records for:
 
-- Missing email
-- Missing phone number
-
-
-Investigation:
-
-1. Review customer record
-2. Identify missing fields
-3. Update information if available
-
+- Missing email addresses
+- Missing phone numbers
+- Missing required fields
 
 ---
 
-## Invalid Data
+### Invalid Formatting
 
-Examples:
+Review:
 
-- Incorrect email format
-- Extra spaces
-- Incorrect company formatting
-
-
-Investigation:
-
-1. Review source data
-2. Validate formatting
-3. Correct inaccurate values
-
+- Email formatting
+- Company names
+- Text consistency
 
 ---
 
-## Duplicate Records
+### Duplicate Records
 
-Examples:
-
-Multiple records exist for the same customer.
-
-
-Investigation:
-
-1. Compare customer details
-2. Confirm duplicate records
-3. Keep the correct record
-
+Compare customer names and email addresses to identify duplicate records before CRM import.
 
 ---
 
-# Tools Used
+## Final Validation
 
-- Excel
-- SQL
-- Salesforce
+Before importing customer information into Salesforce:
 
-
----
-
-# Final Validation
-
-After corrections:
-
-1. Confirm customer data is accurate
-2. Verify CRM information
-3. Document the resolution
+- Confirm customer data is complete.
+- Validate formatting.
+- Remove duplicate records.
+- Document any corrections made.

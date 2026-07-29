@@ -2,36 +2,43 @@
 
 ## Summary
 
-A reporting issue was identified where customer counts did not match expected records.
+A discrepancy was identified between expected customer records and Salesforce reporting results.
 
-This scenario demonstrates how support teams investigate reporting problems by checking upstream customer data.
+---
 
-## Impact
+## Business Impact
 
-- Reported customer numbers were inaccurate.
-- Additional investigation was required to verify the source data.
+- Customer reports displayed inaccurate record counts.
+- Additional investigation was required.
+
+---
 
 ## Investigation
 
-Steps performed:
-
-1. Reviewed reporting results.
-2. Compared records against CRM data.
+1. Reviewed Salesforce reports.
+2. Compared CRM records with the source dataset.
 3. Validated customer information using SQL.
-4. Investigated possible data quality issues.
+4. Reviewed data quality and field mapping.
+
+---
 
 ## Root Cause
 
-The reporting discrepancy was caused by inconsistent customer data between systems.
+The reporting discrepancy was caused by inconsistent customer information before import.
+
+---
 
 ## Resolution
 
-- Reviewed affected records.
-- Corrected data inconsistencies.
-- Verified the customer dataset.
+- Corrected customer data.
+- Revalidated the dataset.
+- Updated Salesforce records.
+- Confirmed report accuracy.
+
+---
 
 ## Prevention
 
-- Perform regular data validation.
-- Maintain accurate data mappings.
-- Monitor data consistency between systems.
+- Perform routine data validation.
+- Review field mapping before imports.
+- Verify reports after onboarding.

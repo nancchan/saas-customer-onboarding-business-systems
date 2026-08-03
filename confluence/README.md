@@ -1,12 +1,10 @@
-# Confluence Implementation Documentation
+# Confluence — Implementation Documentation
 
-Confluence was used to organize the documentation supporting the simulated SaaS customer onboarding and implementation project.
+Confluence was used to organize project requirements, implementation documentation, testing information, and troubleshooting procedures for the simulated SaaS onboarding project.
 
-## Documentation Structure
+The documentation was structured to reflect the lifecycle of an implementation, from requirements and data preparation through validation and troubleshooting.
 
-The project documentation covered the implementation lifecycle from planning and requirements through data preparation, CRM configuration, testing, troubleshooting, and validation.
-
-Documentation created included:
+## Documentation Areas
 
 - Project Overview & Implementation Plan
 - Customer Onboarding Requirements
@@ -20,21 +18,18 @@ Documentation created included:
 - Salesforce Reports & Dashboard Validation
 - Implementation Troubleshooting Guide
 
-## Documentation Approach
+## Screenshots
 
-The documentation was structured to make implementation activities easier to understand, execute, test, and troubleshoot.
-
-It includes requirements documentation, workflow documentation, data mapping, UAT activities, troubleshooting procedures, and implementation validation.
+- confluence_space_overview.png — Confluence project space and documentation structure.
+- confluence_requirements.png — Customer onboarding requirements documentation.
+- confluence_troubleshooting.png — Structured troubleshooting documentation.
 
 ## What This Demonstrates
 
-This project provided practical experience with:
-
-- Organizing implementation documentation
-- Documenting requirements and workflows
-- Supporting user acceptance testing
-- Documenting data and CRM processes
-- Creating structured troubleshooting guidance
-- Recording implementation decisions and validation activities
-
-The screenshots below provide examples of the Confluence space and supporting implementation documentation.
+- Requirements documentation
+- Implementation planning
+- Process documentation
+- UAT documentation
+- Troubleshooting documentation
+- Knowledge organization
+- Technical and business process communication

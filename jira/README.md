@@ -1,33 +1,22 @@
-# Jira Implementation Tracking
+# Jira — Implementation Workflow
 
-Jira was used to organize and track work throughout the simulated SaaS customer onboarding and implementation project.
+Jira was used to organize and track the simulated SaaS customer onboarding and implementation work.
 
-## Implementation Workflow
-
-Work items were managed through a structured workflow:
+The project workflow followed:
 
 To Do → In Progress → In Review → Done
 
-## Work Tracked
+Implementation activities were broken into individual work items and progressed through the workflow to simulate how implementation work can be planned, tracked, reviewed, and completed.
 
-The Jira project was used to organize implementation activities including:
+## Screenshots
 
-- Customer data preparation and validation
-- Salesforce CRM configuration
-- Customer data import and validation
-- API testing and validation
-- User acceptance testing
-- CRM synchronization troubleshooting
-- Implementation documentation
+- jira_board.png — Jira project board showing implementation workflow and completed work.
+- jira_completed_work_item.png — Example implementation work item showing task details and completion status.
 
 ## What This Demonstrates
 
-This project provided practical experience with:
-
-- Creating and managing implementation work items
-- Breaking implementation activities into trackable tasks
-- Managing work through defined workflow stages
-- Reviewing and progressing implementation tasks
-- Connecting implementation activities with documentation, testing, and troubleshooting
-
-The screenshots below provide examples of the project board and implementation work items used during the simulation.
+- Agile project workflow
+- Work item management
+- Implementation task tracking
+- Status and workflow management
+- Structured progression from planning through completion

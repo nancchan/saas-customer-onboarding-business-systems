@@ -2,43 +2,72 @@
 
 ## Purpose
 
-This runbook outlines a structured approach for reviewing customer information before CRM onboarding.
+This runbook explains how to investigate customer data issues before CRM onboarding and reporting.
 
----
-
-## Review Checklist
+## Common Issues
 
 ### Missing Information
 
-Review customer records for:
+**Examples:**  
+- Missing email  
+- Missing phone number  
 
-- Missing email addresses
-- Missing phone numbers
-- Missing required fields
+**Investigation:**  
+1. Review customer record  
+2. Identify missing fields  
+3. Update information if available  
+4. Document unresolved information  
 
----
+### Invalid Data
 
-### Invalid Formatting
+**Examples:**  
+- Incorrect email format  
+- Extra spaces  
+- Incorrect company formatting  
 
-Review:
-
-- Email formatting
-- Company names
-- Text consistency
-
----
+**Investigation:**  
+1. Review source data  
+2. Validate formatting  
+3. Correct inaccurate values  
+4. Recheck the cleaned record  
 
 ### Duplicate Records
 
-Compare customer names and email addresses to identify duplicate records before CRM import.
+**Examples:**  
+Multiple records exist for the same customer.
 
----
+**Investigation:**  
+1. Compare customer details  
+2. Confirm duplicate records  
+3. Identify the appropriate source record  
+4. Remove or flag duplicate information  
+
+## Tools Used
+
+- Excel  
+- SQL  
+- Salesforce  
+
+## Business Impact
+
+Data-quality issues can affect:
+
+- CRM records  
+- Customer communication  
+- Reporting  
+- UAT results  
+- Implementation timelines  
 
 ## Final Validation
 
-Before importing customer information into Salesforce:
+After corrections:
 
-- Confirm customer data is complete.
-- Validate formatting.
-- Remove duplicate records.
-- Document any corrections made.
+1. Confirm customer data is accurate  
+2. Verify CRM information  
+3. Check reporting results where applicable  
+4. Document the resolution  
+5. Record any prevention steps  
+
+## Key Takeaway
+
+Data quality should be reviewed before information moves downstream into CRM and reporting systems.

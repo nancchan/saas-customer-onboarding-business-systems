@@ -1,91 +1,94 @@
-# SaaS Customer Onboarding & Business Systems Simulation
+SaaS Customer Onboarding & Business Systems Simulation
 
-## Project Overview
+Project Overview
 
-This project simulates a full customer onboarding and implementation environment. It focuses on how business requirements, customer data, processes, and systems work together to support successful SaaS implementation.
+This project simulates a customer onboarding and implementation environment, focusing on how business requirements, customer information, processes, and systems work together to support successful implementation.
 
-I created this as a self-directed portfolio project to gain practical experience connecting **business analysis** with **CRM administration**, data validation, business intelligence, testing, troubleshooting, and implementation documentation.
+I created this project as a self-directed portfolio project to develop practical experience connecting business analysis with CRM administration, data validation, business intelligence, testing, troubleshooting, and implementation documentation.
 
-The project follows customer information from initial requirements and data preparation through CRM configuration, validation, reporting, testing, issue investigation, and final handoff.
+The project follows customer information from initial requirements and data preparation through CRM configuration, validation, reporting, testing, issue investigation, and implementation handoff.
 
-### Tools & Technologies
+Tools & Technologies
 
 Salesforce | Excel | SQL | Power BI | Postman | Jira | Confluence | GitHub
 
----
+⸻
 
-## Implementation Workflow
-Business Requirements ↓ Customer Data Preparation ↓ Data Validation & Mapping ↓ CRM Configuration ↓ Data Import & Validation ↓ UAT & Business Reporting ↓ Troubleshooting & Root Cause Analysis ↓ Documentation & Handoff
----
+Implementation Workflow
 
-## What I Practiced
+Requirement → Process → Data → Systems → Validation → Reporting → Resolution → Handoff
 
-### Business Analysis
+⸻
 
-- Defined customer onboarding requirements
-- Mapped the onboarding process and implementation activities
-- Documented requirements, workflows, and expected outcomes
-- Created UAT scenarios to validate implementation results
+Key Areas of Experience
 
-### CRM & Data
+Business Analysis
 
-- Prepared and validated customer data using Excel
-- Investigated data-quality issues using SQL
-- Configured Salesforce objects and fields
-- Mapped and imported customer information into Salesforce
-- Verified CRM records and reporting data
+* Defined customer onboarding requirements
+* Mapped onboarding processes and implementation activities
+* Documented requirements, workflows, and expected outcomes
+* Created UAT scenarios to validate implementation results
 
-### Business Intelligence
+CRM & Data
 
-- Prepared customer data for reporting in Power BI
-- Built business-facing reports and dashboards
-- Used KPIs, charts, filters, and analysis to identify operational insights and data-quality issues
-- Practiced translating data into information that supports business decisions
+* Prepared and validated customer data using Excel
+* Investigated data-quality issues using SQL
+* Configured Salesforce objects and fields
+* Mapped and imported customer information into Salesforce
+* Verified CRM records and data integrity
 
-### APIs & Troubleshooting
+Business Intelligence
 
-- Tested GET, POST, and PUT requests using Postman
-- Reviewed JSON responses and HTTP status codes
-- Investigated simulated data and CRM synchronization issues
-- Applied structured root cause analysis to identify problems within the workflow
+* Prepared customer data for reporting in Power BI
+* Built business-facing reports and dashboards
+* Used reporting and visual analysis to identify operational trends and data-quality issues
+* Practiced translating data into information that supports business decisions
 
-### Project Management & Documentation
+APIs & Troubleshooting
 
-- Used Jira to organize requirements, tasks, priorities, and workflow status
-- Used Confluence to document requirements, processes, testing, troubleshooting, and implementation procedures
-- Maintained supporting documentation and project materials in GitHub
+* Tested GET, POST, and PUT requests using Postman
+* Reviewed JSON responses and HTTP status codes
+* Investigated simulated data and CRM synchronization issues
+* Used structured root cause analysis to identify system issues
 
----
+Project Management & Documentation
 
-## Business & Systems Workflow
+* Used Jira to organize requirements, tasks, priorities, and workflow status
+* Used Confluence to document requirements, processes, testing, troubleshooting, and implementation procedures
+* Maintained supporting documentation and project materials in GitHub
 
-This project demonstrates how a business requirement moves through multiple stages:
-Requirement ↓ Business Process ↓ Customer Data ↓ CRM / Systems ↓ Validation & Testing ↓ Reporting ↓ Issue Resolution ↓ Implementation Handoff
+⸻
 
-The goal was to understand not only how individual tools work, but how information and processes connect across a complete business workflow.
+Business & Systems Workflow
 
----
+Requirement → Process → Data → Systems → Validation → Reporting → Resolution → Handoff
 
-## Key Project Outcomes
+The project demonstrates how a business requirement moves through multiple stages of implementation, from initial definition through to system validation and resolution.
 
-Through this project, I developed practical experience with:
+⸻
 
-- Requirements and process analysis
-- Customer data preparation and validation
-- CRM configuration and data management
-- Business intelligence and reporting
-- UAT and implementation validation
-- API testing and troubleshooting
-- Root cause analysis
-- Business process documentation
-- Implementation workflow management
+Key Project Outcomes
 
----
+Through this project, I developed practical experience in:
 
-## Key Takeaway
+* Requirements and process analysis
+* Customer data preparation and validation
+* CRM configuration and data management
+* Business reporting and operational analysis
+* UAT and implementation validation
+* API testing and troubleshooting
+* Root cause analysis
+* Business process documentation
+* Implementation workflow management
 
-This project reinforced the importance of understanding the **business process behind the technology**.
+⸻
 
-Rather than focusing on individual tools in isolation, I practiced following information from requirements through data preparation, systems, validation, reporting, and issue resolution.
+Key Takeaway
 
-It represents self-directed practical experience developed through Salesforce certification, technical learning, and hands-on portfolio work — providing a strong foundation for roles in business analysis, business systems, CRM, and implementation.
+This project reinforces the importance of understanding the business process behind technology.
+
+Rather than focusing on tools in isolation, the project follows how information moves from requirements through data, systems, validation, reporting, and issue resolution.
+
+It provides a foundation for business analysis, business systems, CRM, and implementation roles.
+
+⸻

@@ -1,68 +1,99 @@
 # Customer Data Cleaning Rules
 
-## Overview
+## Purpose
 
-This document outlines the data validation and cleaning activities completed before importing customer information into Salesforce.
+This document defines the data-cleaning and validation rules applied to customer information before CRM onboarding.
 
-The objective was to improve data quality and prepare customer records for a successful CRM onboarding process.
+The objective is to improve data quality, identify issues that could affect implementation, and prepare customer records for accurate CRM import and reporting.
 
----
+## Business Requirement
 
-# Data Quality Checks
+Customer information should be sufficiently complete, accurate, and consistently formatted before being introduced into the CRM environment.
 
-## Duplicate Records
+Poor-quality data can result in:
 
-Customer records were reviewed to identify duplicate entries.
+* Incomplete CRM records
+* Duplicate customer records
+* Reporting inaccuracies
+* Communication issues
+* Additional implementation and support work
 
-Validation activities included:
+## Cleaning Rules Applied
 
-- Comparing customer names
-- Comparing email addresses
-- Identifying duplicate records
-- Retaining a single validated record for import
+### 1. Duplicate Identification
 
----
+### Problem
 
-## Email Validation
+Multiple records existed for the same customer.
 
-Customer email addresses were reviewed to identify formatting issues.
+### Action
 
-Examples included:
+* Compared customer name and email fields.
+* Identified repeated customer records.
+* Kept the appropriate record as the source of truth.
+* Documented duplicate-prevention requirements.
 
-- Missing "@" symbols
-- Extra spaces
-- Invalid formatting
+### 2. Email Validation
 
-Incorrect values were corrected before import.
+### Problem
 
----
+Some customer email addresses contained formatting issues.
 
-## Missing Information
+### Examples
 
-Customer records were reviewed for incomplete information.
+* Missing @ symbol
+* Extra spaces
+* Incorrect formatting
 
-Examples included:
+### Action
 
-- Missing phone numbers
-- Missing email addresses
+* Reviewed email values.
+* Corrected formatting issues where appropriate.
+* Flagged records requiring additional information.
 
-Missing values were flagged before CRM import.
+### 3. Missing Values
 
----
+### Problem
 
-## Data Standardization
+Some records contained missing phone numbers or other customer information.
 
-Customer information was standardized to improve consistency across the dataset.
+### Action
 
-Examples included:
+* Identified incomplete records.
+* Replaced unavailable values with UNKNOWN where appropriate.
+* Flagged incomplete information for follow-up.
 
-- Company names
-- Text formatting
-- Spacing
-- Capitalization
+### 4. Data Standardization
 
----
+### Problem
 
-## Outcome
+Inconsistent formatting could create CRM import and reporting issues.
 
-After validation and cleaning, the dataset was prepared for Salesforce field mapping, CRM import, and reporting.
+### Action
+
+Standardized:
+
+* Company names
+* Spacing
+* Text formatting
+* Customer information structure
+
+## Validation Outcome
+
+The cleaned dataset was prepared for:
+
+1. SQL data investigation
+2. Salesforce field mapping
+3. CRM import
+4. Reporting and analysis
+5. UAT validation
+
+## Business Analysis Connection
+
+The cleaning rules were based on the requirements of the onboarding process rather than simply correcting individual spreadsheet errors.
+
+The analysis considered how data-quality issues could affect downstream CRM records, reporting, communication, and implementation outcomes.
+
+
+
+

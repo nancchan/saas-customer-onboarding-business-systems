@@ -1,44 +1,48 @@
-# Incident: Reporting Data Discrepancy
+# Incident 003: Reporting Data Discrepancy
 
 ## Summary
 
-A discrepancy was identified between expected customer records and Salesforce reporting results.
+A reporting discrepancy was identified where customer counts did not match the expected records.
 
----
+This scenario demonstrates how reporting issues can require investigation of upstream data rather than simply changing the report itself.
 
 ## Business Impact
 
-- Customer reports displayed inaccurate record counts.
-- Additional investigation was required.
-
----
+- Reported customer numbers were inaccurate  
+- Additional investigation was required  
+- Business users could receive misleading information  
+- The source data required validation  
 
 ## Investigation
 
-1. Reviewed Salesforce reports.
-2. Compared CRM records with the source dataset.
-3. Validated customer information using SQL.
-4. Reviewed data quality and field mapping.
+Steps performed:
 
----
+1. Reviewed the reporting results  
+2. Compared reporting results against CRM data  
+3. Reviewed customer information using SQL  
+4. Investigated possible data-quality issues  
+5. Compared expected and actual results  
 
 ## Root Cause
 
-The reporting discrepancy was caused by inconsistent customer information before import.
-
----
+The discrepancy was caused by inconsistent customer data between systems and reporting sources.
 
 ## Resolution
 
-- Corrected customer data.
-- Revalidated the dataset.
-- Updated Salesforce records.
-- Confirmed report accuracy.
-
----
+- Reviewed affected records  
+- Corrected data inconsistencies  
+- Verified the customer dataset  
+- Rechecked the expected reporting outcome  
 
 ## Prevention
 
-- Perform routine data validation.
-- Review field mapping before imports.
-- Verify reports after onboarding.
+- Perform regular data validation  
+- Maintain accurate data mappings  
+- Monitor consistency between systems  
+- Validate reporting data before using it for business decisions  
+
+## Business Intelligence Connection
+
+The incident demonstrates why business reporting depends on reliable underlying data.
+
+A dashboard can display information accurately while still producing a misleading business result if the underlying data is incomplete or inconsistent.

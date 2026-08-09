@@ -1,99 +1,81 @@
 # Customer Data Cleaning Rules
 
-## Purpose
+## Overview
 
-This document defines the data-cleaning and validation rules applied to customer information before CRM onboarding.
+This document explains the data-cleaning steps performed before customer information was used for CRM onboarding.
 
-The objective is to improve data quality, identify issues that could affect implementation, and prepare customer records for accurate CRM import and reporting.
-
-## Business Requirement
-
-Customer information should be sufficiently complete, accurate, and consistently formatted before being introduced into the CRM environment.
-
-Poor-quality data can result in:
-
-* Incomplete CRM records
-* Duplicate customer records
-* Reporting inaccuracies
-* Communication issues
-* Additional implementation and support work
+The goal was to improve data quality, identify potential issues, and prepare customer records for CRM mapping and import.
 
 ## Cleaning Rules Applied
 
 ### 1. Duplicate Identification
 
-### Problem
-
+**Problem:**  
 Multiple records existed for the same customer.
 
-### Action
-
-* Compared customer name and email fields.
-* Identified repeated customer records.
-* Kept the appropriate record as the source of truth.
-* Documented duplicate-prevention requirements.
+**Action:**  
+- Compared customer names and email addresses  
+- Identified duplicate records  
+- Reviewed repeated entries  
+- Kept the original record as the source of truth  
+- Removed duplicate entries from the cleaned dataset  
 
 ### 2. Email Validation
 
-### Problem
-
+**Problem:**  
 Some customer email addresses contained formatting issues.
 
-### Examples
+**Examples:**  
+- Missing @ symbol  
+- Extra spaces  
+- Incorrect formatting  
 
-* Missing @ symbol
-* Extra spaces
-* Incorrect formatting
-
-### Action
-
-* Reviewed email values.
-* Corrected formatting issues where appropriate.
-* Flagged records requiring additional information.
+**Action:**  
+- Reviewed email fields  
+- Identified invalid formatting  
+- Corrected formatting issues where possible  
+- Prepared the data for CRM validation  
 
 ### 3. Missing Values
 
-### Problem
+**Problem:**  
+Some customer records contained missing phone numbers or other customer information.
 
-Some records contained missing phone numbers or other customer information.
-
-### Action
-
-* Identified incomplete records.
-* Replaced unavailable values with UNKNOWN where appropriate.
-* Flagged incomplete information for follow-up.
+**Action:**  
+- Reviewed incomplete records  
+- Identified missing information  
+- Used `UNKNOWN` where appropriate to clearly mark incomplete information  
+- Flagged records that required additional information  
 
 ### 4. Data Standardization
 
-### Problem
+**Problem:**  
+Inconsistent formatting could create problems during CRM import, reporting, and record matching.
 
-Inconsistent formatting could create CRM import and reporting issues.
+**Action:**  
+Standardized:  
+- Company names  
+- Spacing  
+- Text formatting  
+- Customer information  
 
-### Action
+## Cleaning Process
 
-Standardized:
+The data-cleaning process followed this workflow:
 
-* Company names
-* Spacing
-* Text formatting
-* Customer information structure
+**Raw Customer Data → Review → Identify Issues → Correct / Standardize → Validate → Cleaned Dataset**
 
-## Validation Outcome
+## Result
 
 The cleaned dataset was prepared for:
 
-1. SQL data investigation
-2. Salesforce field mapping
-3. CRM import
-4. Reporting and analysis
-5. UAT validation
+- Salesforce CRM mapping  
+- Salesforce data import  
+- SQL investigation  
+- Power BI reporting  
+- UAT and validation  
+- Customer onboarding analysis  
 
-## Business Analysis Connection
+## Key Takeaway
 
-The cleaning rules were based on the requirements of the onboarding process rather than simply correcting individual spreadsheet errors.
-
-The analysis considered how data-quality issues could affect downstream CRM records, reporting, communication, and implementation outcomes.
-
-
-
-
+Data cleaning helps ensure customer information is accurate, consistent, and ready for use across CRM systems, reporting, and business processes.

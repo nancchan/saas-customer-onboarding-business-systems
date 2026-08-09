@@ -2,75 +2,115 @@
 
 ## Overview
 
-This report summarizes the data quality review completed before importing customer information into Salesforce.
+This report documents the data-quality issues identified in the customer onboarding dataset before CRM import.
 
-The objective was to identify issues that could affect CRM records, reporting, or customer onboarding.
+The purpose of the review was to find issues that could affect customer records, CRM processing, reporting accuracy, and downstream business processes.
 
----
+## Data Quality Issues Identified
 
-# Findings
+### Duplicate Records
 
-## Duplicate Records
+**Issue:**  
+Some customers appeared more than once in the source dataset.
 
-Duplicate customer records were identified within the source dataset.
+**Impact:**  
+- Duplicate customer records  
+- Incorrect customer counts  
+- Potential duplicate CRM records  
+- Inaccurate reporting  
 
-Potential impact:
+**Resolution:**  
+Reviewed customer names and email addresses to identify repeated records and removed duplicate entries from the cleaned dataset.
 
-- Duplicate CRM records
-- Inaccurate reporting
-- Customer confusion
+### Invalid Email Formatting
 
-Resolution:
+**Issue:**  
+Some email addresses contained formatting problems.
 
-Duplicate records were reviewed and removed before import.
+**Examples:**  
+- Missing @ symbol  
+- Extra spaces  
+- Incorrect email formatting  
 
----
+**Impact:**  
+- Failed or incomplete customer communication  
+- Potential CRM validation issues  
+- Reduced data quality  
 
-## Invalid Email Formatting
+**Resolution:**  
+Reviewed email fields and corrected formatting issues where possible.
 
-Some customer email addresses contained formatting issues.
+### Missing Information
 
-Potential impact:
+**Issue:**  
+Some customer records contained missing information, such as phone numbers or email addresses.
 
-- Failed communications
-- CRM validation errors
+**Impact:**  
+- Incomplete customer profiles  
+- Potential CRM import issues  
+- Reduced reporting accuracy  
+- Difficulty contacting customers  
 
-Resolution:
+**Resolution:**  
+Missing information was reviewed and incomplete fields were marked using `UNKNOWN` where appropriate in the cleaned dataset.
 
-Email addresses were reviewed and corrected before import.
+### Inconsistent Formatting
 
----
+**Issue:**  
+Some customer information was not consistently formatted.
 
-## Missing Information
+**Examples:**  
+- Inconsistent capitalization  
+- Extra spaces  
+- Inconsistent company or text formatting  
 
-Some customer records contained incomplete information.
+**Impact:**  
+- Reporting inconsistencies  
+- Difficulty matching customer records  
+- Potential duplicate identification issues  
 
-Potential impact:
+**Resolution:**  
+Standardized customer information before CRM mapping and import.
 
-- Incomplete customer profiles
-- Reduced reporting accuracy
+## Data Quality Review Process
 
-Resolution:
+The customer dataset was reviewed using the following steps:
 
-Missing values were identified and flagged before import.
+1. Reviewed the original customer data  
+2. Identified duplicate records  
+3. Checked required customer information  
+4. Reviewed email formatting  
+5. Reviewed missing phone and email information  
+6. Standardized inconsistent information  
+7. Prepared the cleaned dataset for CRM mapping  
+8. Reviewed the cleaned dataset before Salesforce import  
 
----
+## Business Impact
 
-## Formatting Consistency
+Data quality was treated as an important part of the customer onboarding process because inaccurate or incomplete information can affect:
 
-Formatting differences were identified across customer records.
+- CRM records  
+- Customer communication  
+- Reporting  
+- Business analysis  
+- Data imports  
+- Customer onboarding outcomes  
 
-Potential impact:
+## Final Outcome
 
-- Duplicate matching issues
-- Reporting inconsistencies
+The identified data-quality issues were reviewed and addressed before the customer data was used for CRM onboarding.
 
-Resolution:
+The cleaned dataset was then used as the basis for:
 
-Customer information was standardized before import.
+- Salesforce field mapping  
+- CRM data import  
+- SQL investigation  
+- Business intelligence reporting  
+- UAT and validation  
+- Troubleshooting scenarios  
 
----
+## Key Takeaway
 
-# Outcome
+Data quality is an important part of business systems and customer onboarding.
 
-After completing the data quality review, the dataset was prepared for SQL investigation, Salesforce import, and reporting.
+Reviewing and correcting data before it enters a CRM helps reduce downstream issues and provides a more reliable foundation for reporting, business analysis, and operational decision-making.

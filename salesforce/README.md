@@ -1,99 +1,141 @@
-# Salesforce CRM Administration
+# Salesforce CRM Administration Simulation
 
 ## Project Overview
 
-This section of the project focuses on the Salesforce CRM activities performed during a simulated SaaS customer onboarding process.
+This section demonstrates Salesforce Administrator fundamentals through a simulated customer onboarding and CRM data-management workflow.
 
-The objective was to better understand how customer information is organized, imported, validated, and reported within Salesforce, while becoming familiar with common administration tasks that support implementation and customer onboarding.
+Salesforce represents the CRM environment within the larger project.
 
-Rather than demonstrating advanced Salesforce development, this project focuses on the core administrative activities that are commonly performed by implementation and operations teams.
+The objective was to practice how business requirements and customer information can be translated into CRM structure, field mapping, data import, validation, reporting, and dashboard visualization.
 
----
+## Salesforce Workflow
 
-# Salesforce Workflow
+Customer Requirements  
+↓  
+Customer Data Preparation  
+↓  
+Data Mapping  
+↓  
+Salesforce Data Import  
+↓  
+CRM Record Validation  
+↓  
+Reports  
+↓  
+Dashboard  
 
-Customer Data (CSV)         │         ▼ Data Validation         │         ▼ Field Mapping         │         ▼ Data Import Wizard         │         ▼ Salesforce Records         │         ▼ Reports         │         ▼ Dashboards
+## Salesforce Configuration Completed
 
----
+### Schema Builder
 
-# Activities Completed
+Used Salesforce Schema Builder to review CRM object structure and understand how customer information is organized.
 
-## CRM Data Structure
+**Objects reviewed included:**  
+- Account  
+- Contact  
+- Property  
+- Favorite  
 
-Reviewed Salesforce Schema Builder and Object Manager to better understand how customer information is organized within Salesforce.
+**Screenshot:**  
+See `screenshots/schema_builder.png`
 
-Objects reviewed include:
+### Field Relationship Review
 
-- Account
-- Contact
-- Property
-- Favorite
+Reviewed Salesforce field configuration and relationship fields using Salesforce Object Manager.
 
-Screenshot:
+This provided practice with:
 
-Schema Builder
+- Salesforce data structure  
+- Object relationships  
+- Field configuration  
+- CRM information organization  
 
----
+**Screenshot:**  
+See `screenshots/relationship_fields.png`
 
-## Object Configuration
+### Data Import
 
-Reviewed object fields and relationships to understand how Salesforce stores and connects customer information.
+Customer information was imported using Salesforce Data Import Wizard.
 
-This included:
+**Activities included:**  
+- Preparing the CSV  
+- Reviewing field mapping  
+- Validating source data  
+- Importing records  
+- Verifying imported records  
 
-- Reviewing standard objects
-- Exploring field relationships
-- Understanding how records are linked
+### Data Import Mapping
 
-Screenshot:
+The source customer fields were mapped to the appropriate Salesforce fields before import.
 
-Relationship Fields
+**Screenshot:**  
+See `screenshots/data_import_mapping.png`
 
----
+### Data Import Results
 
-## Customer Data Import
+Imported records were reviewed after the data load to confirm that customer information appeared correctly.
 
-Imported customer records into Salesforce using the Data Import Wizard.
+**Screenshot:**  
+See `screenshots/data_import_result.png`
 
-Activities included:
+## Salesforce Reporting
 
-- Preparing CSV data
-- Mapping source fields
-- Validating imported records
-- Reviewing import results
+Created a basic Salesforce report to review customer account information.
 
-### Field Mapping
+**Example fields included:**  
+- Account Name  
+- Industry  
+- Phone  
 
-Data Import Mapping
+The report was used to practice how CRM information can be presented for business visibility and operational review.
 
-### Import Results
+**Screenshot:**  
+See `screenshots/reports.png`
 
-Data Import Results
+## Salesforce Dashboard
 
----
+Created a basic dashboard using Salesforce report data.
 
-## Reporting & Dashboards
+The dashboard demonstrates:
 
-Created reports and dashboards to review customer information after the import process.
+- Customer account analysis  
+- Industry information  
+- Business reporting  
+- Basic data visualization  
 
-The objective was to understand how Salesforce reporting supports customer visibility and ongoing operations.
+**Visualization used:**  
+- Donut chart  
 
-Report fields included:
+**Screenshot:**  
+See `screenshots/dashboard.png`
 
-- Account Name
-- Industry
-- Phone
+## Business Analysis Connection
 
-Screenshots:
+The Salesforce configuration was based on the customer information and business requirements defined earlier in the onboarding workflow.
 
-Salesforce Report
+The project demonstrates the relationship between:
 
-Salesforce Dashboard
+**Requirement → Data → CRM Configuration → Validation → Reporting**
 
----
+This helped reinforce the idea that CRM configuration should support a business process rather than exist as a standalone technical activity.
 
-# Key Takeaways
+## Skills Demonstrated
 
-Completing this portion of the project strengthened my understanding of Salesforce administration fundamentals, including CRM data organization, customer record management, data imports, reporting, and dashboards.
+- Salesforce Lightning Experience  
+- Schema Builder  
+- Object Manager  
+- Object and field configuration  
+- Data Import Wizard  
+- Field mapping  
+- Data validation  
+- Salesforce Reports  
+- Salesforce Dashboards  
+- CRM data management  
 
-While this is a simulated environment, the activities reflect many of the concepts used during customer onboarding and implementation projects and provided practical experience working with Salesforce from an administrator's perspective.
+## Tools Used
+
+- Salesforce Lightning Experience  
+- Salesforce Trailhead  
+- Salesforce Object Manager  
+- Salesforce Schema Builder  
+- Salesforce Reports & Dashboards  

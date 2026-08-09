@@ -1,6 +1,6 @@
-#SaaS Customer Onboarding & Business Systems Simulation
+# SaaS Customer Onboarding & Business Systems Simulation
 
-##Project Overview
+## Project Overview
 
 This project simulates a customer onboarding and implementation environment, focusing on how business requirements, customer information, processes, and systems work together to support successful implementation.
 
@@ -8,21 +8,21 @@ I created this project as a self-directed portfolio project to develop practical
 
 The project follows customer information from initial requirements and data preparation through CRM configuration, validation, reporting, testing, issue investigation, and implementation handoff.
 
-##Tools & Technologies
+## Tools & Technologies
 
 Salesforce | Excel | SQL | Power BI | Postman | Jira | Confluence | GitHub
 
 ⸻
 
-##Implementation Workflow
+## Implementation Workflow
 
 Requirement → Process → Data → Systems → Validation → Reporting → Resolution → Handoff
 
 ⸻
 
-##Key Areas of Experience
+## Key Areas of Experience
 
-###Business Analysis
+### Business Analysis
 
 The project applied basic business analysis practices to understand the requirements behind the customer onboarding process.
 
@@ -35,7 +35,7 @@ The project applied basic business analysis practices to understand the requirem
 
 The analysis focused on understanding what the business process needed to accomplish before determining how the systems would support it.
 
-###CRM & Data
+### CRM & Data
 
 * Prepared and validated customer data using Excel.
 * Investigated data-quality issues using SQL.
@@ -45,7 +45,7 @@ The analysis focused on understanding what the business process needed to accomp
 * Verified CRM records and data integrity.
 * Used data validation to support accurate CRM processing and reporting.
 
-###Business Intelligence
+### Business Intelligence
 
 Power BI was used to turn customer onboarding data into business-facing information.
 
@@ -60,7 +60,7 @@ The reporting process began with business questions rather than visualizations, 
 
 The objective was to practice moving from data → information → business insight.
 
-###APIs & Troubleshooting
+### APIs & Troubleshooting
 
 * Tested GET, POST, and PUT requests using Postman.
 * Reviewed JSON responses and HTTP status codes.
@@ -68,7 +68,7 @@ The objective was to practice moving from data → information → business insi
 * Traced issues through the customer data and systems workflow.
 * Used structured root cause analysis to identify system issues and document resolutions.
 
-###Project Management & Documentation
+### Project Management & Documentation
 
 * Used Jira to organize requirements, implementation tasks, priorities, and workflow status.
 * Used Confluence to document requirements, processes, testing, troubleshooting, and implementation procedures.
@@ -77,7 +77,7 @@ The objective was to practice moving from data → information → business insi
 
 ⸻
 
-##Business & Systems Workflow
+## Business & Systems Workflow
 
 Requirement → Process → Data → Systems → Validation → Reporting → Resolution → Handoff
 
@@ -85,7 +85,7 @@ The project demonstrates how a business requirement moves through multiple stage
 
 ⸻
 
-##Key Project Outcomes
+## Key Project Outcomes
 
 Through this project, I developed practical experience in:
 
@@ -101,7 +101,7 @@ Through this project, I developed practical experience in:
 
 ⸻
 
-##Key Takeaway
+## Key Takeaway
 
 This project reinforces the importance of understanding the business process behind technology.
 

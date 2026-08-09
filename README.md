@@ -1,233 +1,122 @@
-# SaaS Customer Onboarding & Implementation Simulation
+SaaS Customer Onboarding & Business Systems Simulation
 
-## Project Overview
+Project Overview
 
-This project simulates a SaaS customer onboarding and implementation workflow, following customer information from initial requirements through CRM configuration, validation, testing, and implementation support.
+This project simulates a customer onboarding and implementation environment, focusing on how business requirements, customer information, processes, and systems work together to support successful implementation.
 
-The project was built to understand how business requirements translate into system workflows and how implementation teams coordinate data, systems, documentation, testing, and issue resolution throughout an onboarding process.
+I created this project as a self-directed portfolio project to develop practical experience connecting business analysis with CRM administration, data validation, business intelligence, testing, troubleshooting, and implementation documentation.
 
-The simulation combines business process thinking with hands-on experience in Salesforce, SQL, REST APIs, Excel, Jira, and Confluence.
+The project follows customer information from initial requirements and data preparation through CRM configuration, validation, reporting, testing, issue investigation, and implementation handoff.
 
----
+Tools & Technologies
 
-# Implementation Workflow
+Salesforce | Excel | SQL | Power BI | Postman | Jira | Confluence | GitHub
 
-Requirements & Planning  
-↓  
-Customer Data Preparation & Validation  
-↓  
-CRM Configuration & Data Mapping  
-↓  
-Data Import & API Validation  
-↓  
-UAT & Reporting Validation  
-↓  
-Troubleshooting & Root Cause Analysis  
-↓  
-Documentation & Implementation Handoff
+⸻
 
-### Tools Used
+Implementation Workflow
 
-Salesforce | Excel | SQL | Postman | Jira | Confluence | GitHub
+Business Requirements
+        ↓
+Customer Data Preparation
+        ↓
+Data Validation & Mapping
+        ↓
+CRM Configuration
+        ↓
+Data Import & Validation
+        ↓
+UAT & Business Reporting
+        ↓
+Troubleshooting & Root Cause Analysis
+        ↓
+Documentation & Handoff
 
----
+⸻
 
-# Project Objectives
+What I Practiced
 
-The project was designed to demonstrate how a customer onboarding process can be structured from requirements through implementation and validation.
+Business Analysis
 
-Key objectives included:
+* Defined customer onboarding requirements.
+* Mapped the onboarding process and implementation activities.
+* Documented requirements, workflows, and expected outcomes.
+* Created UAT scenarios to validate implementation results.
 
-- Translate customer and business requirements into implementation activities.
-- Prepare, validate, and map customer data before CRM import.
-- Configure and manage customer information within Salesforce.
-- Validate data movement and API communication between systems.
-- Create reports and dashboards to verify CRM data.
-- Develop UAT scenarios to validate implementation outcomes.
-- Use structured troubleshooting and root cause analysis to investigate simulated problems.
-- Track implementation work through Jira.
-- Document requirements, workflows, testing, and troubleshooting procedures in Confluence.
-- Organize project documentation and supporting materials in GitHub.
+CRM & Data
 
----
+* Prepared and validated customer data using Excel.
+* Investigated data-quality issues using SQL.
+* Configured Salesforce objects and fields.
+* Mapped and imported customer information into Salesforce.
+* Verified CRM records and reporting data.
 
-# Implementation Lifecycle
+Business Intelligence
 
-## 1. Requirements & Planning
+* Prepared customer data for reporting in Power BI.
+* Built business-facing reports and dashboards.
+* Used KPIs, charts, filters, and data analysis to identify operational information and data-quality issues.
+* Practiced translating data into information that could support business decisions.
 
-The project began by defining the customer onboarding requirements and identifying the information, systems, and activities required to move the customer through implementation.
+APIs & Troubleshooting
 
-### Activities
+* Tested GET, POST, and PUT requests using Postman.
+* Reviewed JSON responses and HTTP status codes.
+* Investigated simulated data and CRM synchronization issues.
+* Used structured root cause analysis to identify where problems occurred within the workflow.
 
-- Defined customer onboarding requirements.
-- Identified required customer information.
-- Established implementation activities and workflow.
-- Created implementation work items in Jira.
-- Used Jira workflow stages to track work from To Do → In Progress → In Review → Done.
+Project Management & Documentation
 
-### Tools
+* Used Jira to organize requirements, implementation tasks, priorities, and workflow status.
+* Used Confluence to document requirements, processes, testing, troubleshooting, and implementation procedures.
+* Maintained supporting documentation and project materials in GitHub.
 
-Jira | Confluence
+⸻
 
----
+Business & Systems Workflow
 
-## 2. Customer Data Preparation & Validation
+The project demonstrates how a business requirement can move through multiple stages:
 
-Customer data was reviewed and prepared before being introduced into the CRM environment.
+Requirement
+    ↓
+Business Process
+    ↓
+Customer Data
+    ↓
+CRM / Systems
+    ↓
+Validation & Testing
+    ↓
+Reporting
+    ↓
+Issue Resolution
+    ↓
+Implementation Handoff
 
-### Activities
+The goal was to understand not only how individual tools work, but how information and processes connect across a business workflow.
 
-- Cleaned customer data using Excel.
-- Identified duplicate records.
-- Validated required fields.
-- Reviewed missing information.
-- Standardized inconsistent data.
-- Prepared CSV files for CRM import.
-- Documented data-cleaning rules and validation procedures.
+⸻
 
-### Tools
+Key Project Outcomes
 
-Excel | CSV
+Through the project, I developed practical experience with:
 
----
+* Requirements and process analysis
+* Customer data preparation and validation
+* CRM configuration and data management
+* Business intelligence and reporting
+* UAT and implementation validation
+* API testing and troubleshooting
+* Root cause analysis
+* Business process documentation
+* Implementation workflow management
 
-## 3. CRM Configuration & Data Mapping
+⸻
 
-Salesforce was used to simulate the CRM environment supporting the customer onboarding process.
+Key Takeaway
 
-### Activities
+This project reinforced the importance of understanding the business process behind the technology.
 
-- Reviewed Salesforce object relationships using Schema Builder.
-- Reviewed object and field configuration.
-- Mapped source customer information to Salesforce fields.
-- Imported customer records using the Data Import Wizard.
-- Verified imported records.
-- Reviewed data relationships and CRM structure.
+Rather than focusing on individual tools in isolation, I practiced following information from requirements through data preparation, systems, validation, reporting, and issue resolution.
 
-### Tools
-
-Salesforce CRM | Schema Builder | Object Manager | Data Import Wizard
-
----
-
-## 4. API & Data Validation
-
-Postman and SQL were used to understand how customer information moves between systems and to investigate data inconsistencies.
-
-### SQL
-
-Used SQL to:
-
-- Investigate customer records.
-- Identify missing information.
-- Review duplicate records.
-- Validate customer data.
-
-### Postman
-
-Used Postman to:
-
-- Test GET, POST, and PUT requests.
-- Review JSON responses.
-- Review HTTP status codes.
-- Practice basic API troubleshooting.
-- Understand how customer information can move between connected systems.
-
-### Tools
-
-SQL | Postman | REST APIs
-
----
-
-## 5. UAT & Reporting Validation
-
-The implementation was validated through simulated user acceptance testing and CRM reporting.
-
-### Activities
-
-- Created sample UAT test cases.
-- Validated customer data imports.
-- Verified Salesforce records.
-- Tested reports and dashboards.
-- Compared expected outcomes with actual results.
-- Documented validation results.
-
-### Tools
-
-Salesforce | Excel | Confluence
-
----
-
-## 6. Troubleshooting & Root Cause Analysis
-
-The project includes simulated implementation and support scenarios designed to practice structured investigation rather than simply correcting individual errors.
-
-### Scenarios Included
-
-- CRM synchronization failure caused by missing customer information.
-- Duplicate customer records.
-- Reporting data discrepancy.
-
-### Investigation Approach
-
-Issues were investigated by tracing the customer information through the workflow:
-
-Source Data → Validation → API Processing → Salesforce → Reporting
-
-The investigation focused on identifying where the process diverged from the expected outcome, determining the underlying cause, documenting the resolution, and identifying preventive actions.
-
-### Tools
-
-Excel | SQL | Postman | Salesforce
-
----
-
-## 7. Documentation & Implementation Handoff
-
-Documentation was created throughout the project to demonstrate how implementation work can be communicated and maintained beyond the initial configuration.
-
-### Confluence Documentation
-
-The project includes documentation covering:
-
-- Project Overview & Implementation Plan
-- Customer Onboarding Requirements
-- Customer Data Preparation & Validation
-- Customer Data Mapping
-- Salesforce CRM Configuration
-- Customer Data Import & Validation
-- API Testing & Validation
-- User Acceptance Testing (UAT)
-- CRM Synchronization Troubleshooting
-- Salesforce Reports & Dashboard Validation
-- Implementation Troubleshooting Guide
-
-### GitHub Documentation
-
-GitHub organizes the supporting project materials, including:
-
-- Data files
-- SQL queries
-- Salesforce documentation
-- Postman testing
-- Runbooks
-- Incident investigations
-- UAT documentation
-- Data mapping
-- Troubleshooting workflows
-
----
-
-# Project Structure
-
-text SaaS-Customer-Onboarding-Implementation/ │ ├── excel/ │   ├── raw_customers.csv │   ├── cleaned_customer.csv │   ├── cleaning_rules.md │   ├── data_mapping.md │   └── data_quality_report.md │ ├── sql/ │   ├── customer_lookup.sql │   ├── data_quality_check.sql │   ├── invalid_email_check.sql │   └── missing_customer_information.sql │ ├── postman/ │   ├── README.md │   └── screenshots/ │ ├── salesforce/ │   ├── README.md │   └── screenshots/ │ ├── incidents/ │   ├── incident_001_crm_sync_failure.md │   ├── incident_002_duplicate_customer_records.md │   └── incident_003_reporting_data_issue.md │ ├── runbooks/ │   ├── crm_sync_troubleshooting.md │   ├── data_quality_investigation.md │   └── fix_crm_sync_failure.md │ ├── documentation/ │   └── troubleshooting_workflow.md │ ├── jira/ │   ├── jira_board.png │   └── jira_completed_work_item.png │ └── README.md 
-
----
-
-# Key Takeaways
-
-This project demonstrates how customer onboarding can be approached as an end-to-end implementation process, rather than as a series of disconnected technical tasks.
-
-Working through the project reinforced the importance of understanding requirements, maintaining data quality, validating system behavior, documenting decisions, testing outcomes, and following a structured approach to troubleshooting.
-
-The project also provided practical experience connecting business processes with CRM systems and technical workflows—the area I am continuing to develop as I transition into technology-focused implementation and business systems roles.
+The project represents self-directed practical experience developed through Salesforce certification, technical learning, and hands-on portfolio work, and provides a foundation for continued development toward business analysis, business systems, business operations, CRM, and implementation roles.

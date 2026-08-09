@@ -2,46 +2,85 @@
 
 ## Overview
 
-This section of the project demonstrates basic REST API concepts using Postman.
+This folder demonstrates basic REST API testing using Postman as part of the simulated customer onboarding workflow.
 
-The objective was to better understand how APIs support communication between business systems and how implementation or support teams investigate API-related issues during customer onboarding.
+The purpose was to develop practical understanding of how systems exchange information and how API behavior can be investigated when customer information does not move through a workflow as expected.
 
----
+## Role in the Project
 
-# Requests Practiced
+API testing was used as one part of the broader customer data flow:
 
-## GET Request
+**Customer Data → Validation → API Request/Response → Salesforce → Reporting**
 
-Retrieved customer information from an API endpoint to understand how existing customer data can be accessed.
+The project does not simulate a production API integration. Instead, Postman was used to practice basic request and response analysis and troubleshooting.
 
----
+## Requests Tested
 
-## POST Request
+### GET Request
 
-Submitted customer information to simulate creating a new customer record.
+**Purpose:**  
+Retrieve customer information from an API.
 
----
+**Practice:**  
+- Sending a GET request  
+- Reviewing returned data  
+- Reviewing the response status  
+- Understanding the structure of a JSON response  
 
-## PUT Request
+### POST Request
 
-Updated an existing customer record to understand how information can be modified after onboarding.
+**Purpose:**  
+Simulate sending new customer information to an API.
 
----
+**Practice:**  
+- Sending customer information in a request  
+- Reviewing the response  
+- Understanding how submitted information can be processed  
 
-## Error Response Review
+### PUT Request
 
-Reviewed common HTTP responses that may occur during API requests.
+**Purpose:**  
+Simulate updating existing customer information.
 
-Examples include:
+**Practice:**  
+- Sending updated information  
+- Reviewing the response  
+- Understanding how an existing record can be modified  
 
-- 200 OK
-- 400 Bad Request
-- 401 Unauthorized
-- 403 Forbidden
-- 404 Not Found
+## Error Testing
 
----
+Basic error scenarios were reviewed to understand how failed requests can be investigated.
 
-# Key Takeaways
+**Examples:**  
+- 400 Bad Request  
+- 404 Not Found  
 
-Working with Postman helped reinforce REST API fundamentals, request structure, response codes, and basic troubleshooting concepts that are commonly encountered during SaaS implementation and customer onboarding.
+## Troubleshooting Approach
+
+When an API request does not produce the expected result, the investigation considers:
+
+1. Request method  
+2. Request URL  
+3. Request data  
+4. Response status code  
+5. Response message  
+6. Returned JSON information  
+7. Whether the issue could be related to the customer data or another part of the workflow  
+
+## Skills Practiced
+
+- REST API fundamentals  
+- HTTP methods  
+- HTTP status codes  
+- JSON response review  
+- Request and response analysis  
+- Basic API troubleshooting  
+
+## Screenshots
+
+The screenshots folder contains examples of:
+
+- GET request  
+- POST request  
+- PUT request  
+- Error response  

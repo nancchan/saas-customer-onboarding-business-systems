@@ -1,56 +1,86 @@
-# Customer Data Mapping
+Customer Data Mapping
 
-## Overview
+Overview
 
-Data mapping defines how customer information moves from the source dataset into the CRM system.
+Data mapping defines how customer information moves from the cleaned Excel dataset into Salesforce.
 
-Accurate mapping helps ensure that information is placed into the correct Salesforce fields and reduces the risk of missing or incorrectly assigned customer information.
+Accurate mapping helps ensure that customer information is placed into the correct Salesforce fields and supports accurate CRM records, reporting, and customer onboarding.
 
-## Source-to-Salesforce Mapping
+Source-to-Salesforce Mapping
 
-| Source Field | Salesforce Field |
-|--------------|------------------|
-| Name         | Lead Name        |
-| Email        | Email            |
-| Phone        | Phone            |
-| Company      | Company          |
+Source Field	Salesforce Object	Salesforce Field
+First Name	Contact	First Name
+Last Name	Contact	Last Name
+Email	Contact	Email
+Phone	Contact	Phone
+Account Name	Account	Account Name
 
-## Mapping Purpose
+Account–Contact Relationship
 
-The purpose of the mapping exercise was to establish a clear relationship between the source customer dataset and the Salesforce CRM fields used during the onboarding process.
+The cleaned customer dataset contains both customer and company information.
 
-Before importing customer information, the source fields were reviewed to ensure they could be mapped to the appropriate CRM fields.
+In Salesforce:
 
-## Why Data Mapping Matters
+* Account Name is stored on the Account record.
+* First Name and Last Name identify the Contact.
+* Email and Phone are stored on the Contact record.
+* The Contact is associated with the appropriate Account.
+
+This structure allows customer information to be organized using the Salesforce Account–Contact relationship.
+
+Mapping Purpose
+
+The purpose of the mapping exercise was to establish a clear relationship between the cleaned customer dataset and the Salesforce CRM structure used during the onboarding process.
+
+The source data was reviewed and prepared before import to ensure that the fields could be mapped to the appropriate Salesforce Account and Contact fields.
+
+Data Preparation Before Mapping
+
+The original dataset contained a combined Name field and a Company field.
+
+During data preparation:
+
+* Name was separated into First Name and Last Name
+* Company was renamed to Account Name
+* Duplicate customer records were removed
+* Email formatting was reviewed
+* Missing phone information was identified
+* The cleaned dataset was structured for Salesforce import
+
+Why Data Mapping Matters
 
 Incorrect field mapping can result in:
 
-- Missing customer information  
-- Incorrect CRM records  
-- Data-quality problems  
-- Reporting issues  
-- Additional troubleshooting after import  
+* Missing customer information
+* Incorrect CRM records
+* Incorrect Account–Contact relationships
+* Data-quality problems
+* Reporting issues
+* Additional troubleshooting after import
 
-## Mapping Process
+Mapping Process
 
 The mapping process followed these steps:
 
-1. Reviewed the source customer dataset  
-2. Identified the customer fields required for CRM onboarding  
-3. Reviewed the corresponding Salesforce fields  
-4. Matched source fields to Salesforce fields  
-5. Checked for missing or incomplete information  
-6. Used the mapping during the Salesforce data import process  
-7. Verified the resulting CRM records after import  
+1. Reviewed the raw customer dataset
+2. Identified the customer information required for CRM onboarding
+3. Cleaned and structured the source data
+4. Reviewed the corresponding Salesforce Account and Contact fields
+5. Matched source fields to Salesforce fields
+6. Reviewed missing or incomplete information
+7. Used the mapping during Salesforce data import
+8. Verified the resulting CRM records after import
 
-## Business Systems Connection
+Business Systems Connection
 
 Data mapping connects the business requirement for accurate customer information with the system configuration required to store that information.
 
-**Business Requirement → Source Data → Field Mapping → CRM Record → Reporting**
+Business Requirement → Source Data → Data Preparation → Field Mapping → CRM Record → Reporting
 
-## Key Takeaway
+Key Takeaway
 
 Data mapping provides a clear connection between source information and CRM structure.
 
-A well-defined mapping helps support accurate CRM imports, reliable reporting, and better data quality throughout the customer onboarding process.
+The mapping process helped ensure that customer information from the cleaned Excel dataset was placed into the appropriate Salesforce Account and Contact fields.
+
+A well-defined mapping supports accurate CRM imports, reliable reporting, data quality, and effective customer onboarding.

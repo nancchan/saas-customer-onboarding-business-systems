@@ -4,136 +4,197 @@
 
 This section demonstrates Salesforce Administrator fundamentals practiced through the simulated customer onboarding workflow.
 
-Salesforce represents the CRM environment within the larger project.
+The Salesforce portion focused on translating cleaned customer information into CRM records, configuring the relevant CRM structure, mapping and importing customer data, validating records, and creating basic reporting and dashboard visualizations.
 
-The objective was to practice how business requirements and customer information can be translated into CRM structure, field mapping, data import, validation, reporting, and dashboard visualization.
+The final Salesforce dataset contained 16 customer/contact records.
 
 ## Salesforce Workflow
 
-Customer Requirements → Customer Data Preparation → Data Mapping → Salesforce Data Import → CRM Record Validation → Reports → Dashboard
+**Customer Requirements → Data Preparation → CRM Configuration → Data Mapping → Data Import → Validation → Reporting → Dashboard**
 
-## Salesforce Configuration Completed
+## Salesforce Configuration
 
 ### Schema Builder
 
-Used Salesforce Schema Builder to review CRM object structure and understand how customer information is organized.
+Used Salesforce Schema Builder to review the CRM structure and understand the relationship between Account and Contact objects.
 
-Objects reviewed included:
+The objects relevant to the customer import were:
 
-* Account
-* Contact
-* Property
-* Favorite
+- Account
+- Contact
 
-Screenshot:
+The standard Account–Contact relationship was reviewed as part of the CRM data model.
 
-screenshots/schema_builder.png
+Property, Offer, and Favorite may exist within the broader Salesforce environment but were not used in the customer CSV import.
+
+**Screenshot:** `screenshots/schema_builder.png`
 
 ### Field Relationship Review
 
-Reviewed Salesforce field configuration and relationship fields using Salesforce Object Manager.
+Reviewed Salesforce field configuration and object relationships using Salesforce Object Manager.
 
-This provided practice with:
+The primary relationship relevant to the customer import was:
 
-* Salesforce data structure
-* Object relationships
-* Field configuration
-* CRM information organization
+**Account → Contact**
 
-Screenshot:
+The Contact Account relationship allows imported customer records to be associated with the appropriate business account.
 
-screenshots/relationship_fields.png
+**Screenshot:** `screenshots/relationship_fields.png`
 
-### Data Import
+## Customer Data Preparation
 
-Customer information was imported using Salesforce Data Import Wizard.
+The final cleaned CSV contained 16 customer/contact records.
 
-Activities included:
+The fields used for the Salesforce import were:
 
-* Preparing the CSV
-* Reviewing field mapping
-* Validating source data
-* Importing records
-* Verifying imported records
+- First Name
+- Last Name
+- Email
+- Phone
+- Account Name
+
+The dataset represented customers associated with nine business accounts:
+
+- Salesforce
+- HubSpot
+- Shopify
+- Stripe
+- Microsoft
+- Atlassian
+- Zoom
+- ServiceNow
+- Slack
+
+## Data Import
+
+Customer information was imported using the Salesforce Data Import Wizard.
+
+The process included:
+
+- Preparing the cleaned CSV
+- Selecting Accounts and Contacts
+- Uploading the CSV
+- Reviewing field mappings
+- Mapping the Account relationship
+- Starting the import
+- Reviewing import results
+- Validating imported records
 
 ### Data Import Mapping
 
-The source customer fields were mapped to the appropriate Salesforce fields before import.
+The source CSV fields were mapped to the appropriate Salesforce fields.
 
-Screenshot:
+| CSV Field | Salesforce Field |
+|---|---|
+| First Name | Contact: First Name |
+| Last Name | Contact: Last Name |
+| Email | Contact: Email |
+| Phone | Contact: Phone |
+| Account Name | Contact: Account |
 
-screenshots/data_import_mapping.png
+**Screenshot:** `screenshots/data_import_mapping.png`
+
+### Relationship Field Mapping
+
+The `Account Name` CSV field was mapped to the Contact Account relationship so that each imported Contact could be associated with the appropriate Account.
+
+Examples:
+
+- John Smith → Salesforce
+- Sarah Lee → HubSpot
+- Mike Brown → Shopify
+- Anna White → Stripe
+
+**Screenshot:** `screenshots/relationship_field_mapping.png`
 
 ### Data Import Results
 
-Imported records were reviewed after the data load to confirm that customer information appeared correctly.
+The Data Import Wizard results were reviewed after the import to confirm that the customer records were processed successfully.
 
-Screenshot:
+The expected dataset contained 16 Contacts with customer information and Account associations.
 
-screenshots/data_import_result.png
+**Screenshot:** `screenshots/data_import_result.png`
+
+## Salesforce Record Validation
+
+Imported Contact records were reviewed to verify:
+
+- First Name
+- Last Name
+- Email
+- Phone
+- Associated Account
+
+The Account relationship was also checked to confirm that Contacts were associated with the appropriate business accounts.
 
 ## Salesforce Reporting
 
-Created a basic Salesforce report to review customer account information.
+A Salesforce report was created to review the imported customer/contact information.
 
-Example fields included:
+The report included:
 
-* Account Name
-* Industry
-* Phone
+- Contact Name
+- Email
+- Phone
+- Account Name
 
-The report was used to practice how CRM information can be presented for business visibility and operational review.
+The report was grouped by Account Name to review customer distribution across business accounts.
 
-Screenshot:
-
-screenshots/reports.png
+**Screenshot:** `screenshots/reports.png`
 
 ## Salesforce Dashboard
 
-Created a basic dashboard using Salesforce report data.
+A Salesforce dashboard was created using the imported customer data and report.
 
-The dashboard demonstrates:
+The dashboard includes a donut chart showing the distribution of Contacts across Accounts.
 
-* Customer account analysis
-* Industry information
-* Business reporting
-* Basic data visualization
+The 16 Contacts were distributed across nine Accounts:
 
-Visualization used:
+| Account | Contacts |
+|---|---:|
+| Salesforce | 1 |
+| HubSpot | 2 |
+| Shopify | 2 |
+| Stripe | 2 |
+| Microsoft | 2 |
+| Atlassian | 2 |
+| Zoom | 2 |
+| ServiceNow | 2 |
+| Slack | 1 |
 
-* Donut chart
-
-Screenshot:
-
-screenshots/dashboard.png
+**Screenshot:** `screenshots/dashboard.png`
 
 ## Business Analysis Connection
 
-The Salesforce configuration was based on the customer information and business requirements defined earlier in the onboarding workflow.
+The Salesforce implementation demonstrates how prepared customer information can be translated into structured CRM records and then used for validation, reporting, and business visualization.
 
-The project demonstrates the relationship between:
+The workflow connects:
 
-Requirement → Data → CRM Configuration → Validation → Reporting
+**Requirement → Data → CRM Configuration → Validation → Reporting**
 
-This helped reinforce the idea that CRM configuration should support a business process rather than exist as a standalone technical activity.
+This supports the broader project objective of connecting business requirements, customer data, systems, and implementation activities.
 
 ## Skills Demonstrated
 
-* Salesforce Lightning Experience
-* Schema Builder
-* Object Manager
-* Object and field configuration
-* Data Import Wizard
-* Field mapping
-* Data validation
-* Salesforce Reports
-* Salesforce Dashboards
-* CRM data management
+- Salesforce Lightning Experience
+- Schema Builder
+- Object Manager
+- Standard Salesforce objects and fields
+- Account–Contact relationships
+- Data Import Wizard
+- CSV data preparation
+- Field mapping
+- Relationship mapping
+- Data validation
+- Salesforce Reports
+- Salesforce Dashboards
+- CRM data management
 
 ## Tools Used
 
-* Salesforce Lightning Experience
-* Salesforce Trailhead
-* Salesforce Object Manager
-* Salesforce Schema Builder
-* Salesforce Reports & Dashboards
+- Salesforce Lightning Experience
+- Salesforce Object Manager
+- Salesforce Schema Builder
+- Salesforce Reports & Dashboards
+- Microsoft Excel
+- CSV

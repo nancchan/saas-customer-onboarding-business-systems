@@ -4,7 +4,9 @@
 
 This document outlines a simplified SaaS customer onboarding workflow used throughout this project.
 
-The objective is to demonstrate how customer information progresses from initial collection through CRM onboarding, reporting, and ongoing support while highlighting common validation and implementation activities.
+The objective is to demonstrate how customer information progresses from initial requirements and collection through data validation, CRM onboarding, reporting, and ongoing support while highlighting common validation and implementation activities.
+
+The workflow was used as a foundation for identifying business requirements, system requirements, testing activities, and reporting needs throughout the project.
 
 ---
 

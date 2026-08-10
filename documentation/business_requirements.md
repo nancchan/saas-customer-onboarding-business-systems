@@ -4,7 +4,7 @@
 
 This document defines the basic business requirements for the simulated customer onboarding process.
 
-The purpose of the requirements is to identify what information, processes, and system capabilities are needed to support customer onboarding before configuring the CRM and reporting environment.
+The requirements provide a foundation for the customer onboarding workflow, CRM configuration, data validation, testing, reporting, and troubleshooting activities completed in this project.
 
 ## Business Objective
 
@@ -18,22 +18,20 @@ The objective is to create a consistent customer onboarding process that allows 
 - Reported
 - Investigated when issues occur
 
-The process should help reduce data-quality issues and provide reliable customer information for operational and reporting purposes.
-
 ## Business Requirements
 
-### BR-001 — Customer Information Collection
+### BR-001 — Customer Information
 
-The process must capture the customer information required for onboarding.
+The onboarding process must capture the customer information required to support onboarding.
 
 Required information includes:
 
 - Customer Name
+- Company
 - Email
 - Phone
-- Company
 
-### BR-002 — Data Quality Validation
+### BR-002 — Data Quality
 
 Customer information should be reviewed before CRM import.
 
@@ -44,17 +42,13 @@ The process should identify:
 - Invalid email formatting
 - Inconsistent formatting
 
-### BR-003 — CRM Data Management
+### BR-003 — CRM Processing
 
-Validated customer information should be mapped to the appropriate Salesforce fields.
+Validated customer information should be mapped to the appropriate Salesforce fields and imported into the CRM.
 
-The CRM should contain accurate customer information after import.
+### BR-004 — CRM Validation
 
-### BR-004 — Data Validation
-
-Imported Salesforce records should be reviewed against the source customer information.
-
-The purpose is to confirm that information was transferred correctly.
+Imported Salesforce records should be reviewed against the source customer information to confirm that the information was transferred correctly.
 
 ### BR-005 — Reporting
 
@@ -69,9 +63,7 @@ Reporting should help users understand:
 
 ### BR-006 — Testing
 
-The onboarding process should include user acceptance testing.
-
-Testing should compare expected results against actual results.
+The onboarding process should include user acceptance testing to compare expected results with actual results.
 
 ### BR-007 — Issue Investigation
 
@@ -88,25 +80,20 @@ Potential investigation areas include:
 
 ## Business Questions
 
-The onboarding process should help answer the following questions:
+The project should help answer:
 
 1. Is the customer information complete?
 2. Are duplicate records present?
-3. Are customer records formatted consistently?
-4. Was customer information imported correctly into Salesforce?
-5. Can customer information be reported accurately?
-6. Which records require additional attention?
-7. What should be investigated when the expected result does not occur?
-
-## Expected Outcome
-
-The expected outcome is a structured customer onboarding process where customer information can move from initial requirements through data preparation, CRM processing, validation, reporting, testing, and issue resolution.
+3. Was customer information imported correctly?
+4. Can customer information be reported accurately?
+5. Which records require attention?
+6. What should be investigated when the expected result does not occur?
 
 ## Business Analysis Connection
 
-The requirements provide the foundation for the rest of the project.
+The requirements provide a foundation for the rest of the project.
 
-The requirements are used to guide:
+The project connects:
 
 **Requirements → Process → Data → CRM → Testing → Reporting → Troubleshooting**
 

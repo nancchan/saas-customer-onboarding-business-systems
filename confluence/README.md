@@ -45,6 +45,7 @@ The documentation follows the broader project workflow:
 
 - `confluence_space_overview.png` — Confluence project space showing the overall documentation structure.
 - `confluence_requirements.png` — Business requirements and customer onboarding documentation.
+- `confluence_uat.png` — User Acceptance Testing documentation and test case information.
 - `confluence_troubleshooting.png` — Structured troubleshooting documentation.
 
 ## What This Demonstrates

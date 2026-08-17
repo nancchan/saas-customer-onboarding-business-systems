@@ -1,131 +1,132 @@
-Customer Data Cleaning Rules
+# Customer Data Cleaning Rules
 
-Overview
+## Overview
 
 This document explains the data-cleaning rules applied to the raw customer dataset before the information was prepared for CRM onboarding.
 
 The goal was to identify data-quality issues, standardize the customer information, remove duplicate records, and prepare the dataset for Salesforce mapping and import.
 
-Cleaning Rules Applied
+## Cleaning Rules Applied
 
-1. Duplicate Identification
+### 1. Duplicate Identification
 
-Problem:
+**Problem:**  
 Multiple records existed for the same customer in the raw dataset.
 
-Action:
+**Action:**
 
-* Compared customer names and email addresses
-* Identified repeated customer records
-* Reviewed duplicate entries
-* Kept one valid record as the source record
-* Removed duplicate entries from the cleaned dataset
+- Compared customer names and email addresses
+- Identified repeated customer records
+- Reviewed duplicate entries
+- Kept one valid record as the source record
+- Removed duplicate entries from the cleaned dataset
 
-Result:
+**Result:**
 
 Three duplicate records were removed, reducing the dataset from 19 raw records to 16 unique customer records.
 
-2. Email Validation
+### 2. Email Validation
 
-Problem:
+**Problem:**  
 Some customer email addresses contained formatting issues.
 
-Examples:
+**Examples:**
 
-* Missing @ symbol
-* Incorrect email structure
-* Invalid email formatting
+- Missing `@` symbol
+- Incorrect email structure
+- Invalid email formatting
 
-Action:
+**Action:**
 
-* Reviewed email fields
-* Identified incorrectly formatted email addresses
-* Corrected the invalid email where possible
-* Reviewed the cleaned email values before CRM import
+- Reviewed email fields
+- Identified incorrectly formatted email addresses
+- Corrected the invalid email where possible
+- Reviewed the cleaned email values before CRM import
 
-3. Missing Values
+### 3. Missing Values
 
-Problem:
+**Problem:**  
 Some customer records contained missing information.
 
-Action:
+**Action:**
 
-* Reviewed customer records for missing values
-* Identified missing phone information
-* Used NULL to represent unavailable phone information
-* Avoided creating fictional customer information
-* Flagged incomplete information for review
+- Reviewed customer records for missing values
+- Identified missing phone information
+- Used `NULL` to represent unavailable phone information
+- Avoided creating fictional customer information
+- Flagged incomplete information for review
 
-4. Name Structure
+### 4. Name Structure
 
-Problem:
-The raw dataset contained a combined Name field, while Salesforce Contact records use separate First Name and Last Name fields.
+**Problem:**  
+The raw dataset contained a combined `Name` field, while Salesforce Contact records use separate First Name and Last Name fields.
 
-Action:
+**Action:**
 
-* Separated the combined Name field
-* Created a First Name field
-* Created a Last Name field
-* Verified that the resulting names were correctly structured
+- Separated the combined Name field
+- Created a First Name field
+- Created a Last Name field
+- Verified that the resulting names were correctly structured
 
-5. Company / Account Structure
+### 5. Company / Account Structure
 
-Problem:
+**Problem:**  
 The raw dataset used a Company field, while the Salesforce CRM structure uses Accounts.
 
-Action:
+**Action:**
 
-* Renamed Company to Account Name
-* Prepared company information for Salesforce Account mapping
-* Used the Account–Contact relationship to associate customers with their companies
+- Renamed Company to Account Name
+- Prepared company information for Salesforce Account mapping
+- Used the Account–Contact relationship to associate customers with their companies
 
-6. Data Standardization
+### 6. Data Standardization
 
-Problem:
+**Problem:**  
 Inconsistent data structures can create problems during CRM import, reporting, and record matching.
 
-Action:
+**Action:**
 
 Standardized:
 
-* Customer name structure
-* Email formatting
-* Phone number formatting
-* Company / Account naming
-* Column names
-* Overall dataset structure
+- Customer name structure
+- Email formatting
+- Phone number formatting
+- Company / Account naming
+- Column names
+- Overall dataset structure
 
-Cleaning Process
+## Cleaning Process
 
 The data-cleaning process followed this workflow:
 
-Raw Customer Data → Review → Identify Issues → Clean / Standardize → Validate → Cleaned Dataset → Salesforce Import
+**Raw Customer Data → Review → Identify Issues → Clean / Standardize → Validate → Cleaned Dataset → Salesforce Import**
 
-Raw vs. Cleaned Dataset
+## Raw vs. Cleaned Dataset
 
-Data Quality Area	Raw Dataset	Cleaned Dataset
-Records	19	16
-Duplicate records	3 duplicate entries	Removed
-Email formatting	1 invalid email	Corrected
-Missing phone	1 missing value	Represented as NULL
-Name structure	Combined Name field	First Name + Last Name
-Company field	Company	Account Name
-CRM-ready structure	No	Yes
+| Data Quality Area | Raw Dataset | Cleaned Dataset |
+|---|---|---|
+| Records | 19 | 16 |
+| Duplicate records | 3 duplicate entries | Removed |
+| Email formatting | 1 invalid email | Corrected |
+| Missing phone | 1 missing value | Represented as `NULL` |
+| Name structure | Combined Name field | First Name + Last Name |
+| Company field | Company | Account Name |
+| CRM-ready structure | No | Yes |
 
-Result
+## Result
 
 The cleaned dataset was prepared for:
 
-* Salesforce CRM mapping
-* Salesforce data import
-* SQL investigation
-* Power BI reporting
-* UAT and validation
-* Customer onboarding analysis
+- Salesforce CRM mapping
+- Salesforce data import
+- SQL investigation
+- Power BI reporting
+- UAT and validation
+- Customer onboarding analysis
 
 The final cleaned dataset contained 16 unique customer records.
 
-Key Takeaway
+## Key Takeaway
 
 Data cleaning helps ensure customer information is accurate, consistent, and ready for use across CRM systems, reporting, and business processes.
 

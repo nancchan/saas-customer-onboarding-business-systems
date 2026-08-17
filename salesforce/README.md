@@ -80,7 +80,7 @@ The process included:
 - Reviewing import results
 - Validating imported records
 
-### Data Import Mapping
+## Data Import Mapping
 
 The source CSV fields were mapped to the appropriate Salesforce fields.
 
@@ -94,9 +94,9 @@ The source CSV fields were mapped to the appropriate Salesforce fields.
 
 **Screenshot:** `screenshots/data_import_mapping.png`
 
-### Relationship Field Mapping
+## Relationship Field Mapping
 
-The `Account Name` CSV field was mapped to the Contact Account relationship so that each imported Contact could be associated with the appropriate Account.
+The Account Name CSV field was mapped to the Contact Account relationship so that each imported Contact could be associated with the appropriate Account.
 
 Examples:
 
@@ -107,7 +107,7 @@ Examples:
 
 **Screenshot:** `screenshots/relationship_field_mapping.png`
 
-### Data Import Results
+## Data Import Results
 
 The Data Import Wizard results were reviewed after the import to confirm that the customer records were processed successfully.
 
@@ -148,7 +148,7 @@ A Salesforce dashboard was created using the imported customer data and report.
 
 The dashboard includes a donut chart showing the distribution of Contacts across Accounts.
 
-The 16 Contacts were distributed across nine Accounts:
+The 16 Contacts were distributed across nine Accounts.
 
 | Account | Contacts |
 |---|---:|
@@ -166,16 +166,17 @@ The 16 Contacts were distributed across nine Accounts:
 
 ## Business Analysis Connection
 
-The Salesforce implementation demonstrates how prepared customer information can be translated into structured CRM records and then used for validation, reporting, and business visualization.
+The Salesforce work demonstrates how prepared customer information can be translated into structured CRM records and then used for validation, reporting, and business visualization.
 
 The workflow connects:
 
 **Requirement → Data → CRM Configuration → Validation → Reporting**
 
-This supports the broader project objective of connecting business requirements, customer data, systems, and implementation activities.
+This supports the broader project objective of connecting business requirements, customer data, systems, and operational activities.
 
 ## Skills Demonstrated
 
+- Salesforce Administrator fundamentals
 - Salesforce Lightning Experience
 - Schema Builder
 - Object Manager

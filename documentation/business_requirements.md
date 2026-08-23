@@ -98,3 +98,23 @@ The project connects:
 **Requirements → Process → Data → CRM → Testing → Reporting → Troubleshooting**
 
 This demonstrates how business requirements can be translated into practical system and operational activities.
+
+# Requirements Traceability
+
+The business requirements are further translated into user stories and acceptance criteria.
+
+BR-001 → US-001 → Customer Information
+
+BR-002 → US-002 → Data Quality
+
+BR-003 → US-003 → Salesforce CRM Processing
+
+BR-004 → US-004 → CRM Validation
+
+BR-005 → US-005 → Reporting
+
+BR-006 → US-006 → UAT & Testing
+
+BR-007 → US-007 → Issue Investigation
+
+This traceability connects the original business need to the implementation activities and testing performed throughout the project.

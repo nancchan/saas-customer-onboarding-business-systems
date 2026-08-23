@@ -99,7 +99,7 @@ The project connects:
 
 This demonstrates how business requirements can be translated into practical system and operational activities.
 
-# Requirements Traceability
+## Requirements Traceability
 
 The business requirements are further translated into user stories and acceptance criteria.
 

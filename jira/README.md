@@ -2,23 +2,27 @@
 
 ## Overview
 
-Jira was used to organize implementation work and track a simulated defect identified during User Acceptance Testing.
+Jira was used to organize implementation work and track a simulated defect identified during User Acceptance Testing (UAT).
 
-The Jira workflow demonstrates how a business issue can be recorded, investigated, assigned, resolved, and retested.
+The Jira workflow demonstrates how a business issue can be recorded, investigated, resolved, and retested.
+
+---
 
 ## Main Defect
 
-**DEF-001 — Incorrect Salesforce Account Mapping**
+### DEF-001 — Incorrect Salesforce Account Mapping
 
-### Related UAT
+**Related Requirement:** BR-004 — CRM Validation
 
-**TC004 — Validate Account-Contact Mapping**
+**Related UAT:** TC004 — Validate Account-Contact Mapping
 
 **Initial Result:** Fail
 
 ### Issue
 
-A customer Contact was associated with an incorrect Salesforce Account after the CRM import.
+During UAT, a customer Contact was found to be associated with an incorrect Salesforce Account.
+
+The source customer data contained the correct Account information, but the Salesforce record did not match the expected Account relationship.
 
 ### Business Impact
 
@@ -29,15 +33,42 @@ The issue could result in:
 - Additional manual investigation
 - Delays during customer onboarding
 
-### Resolution
+---
+
+## Investigation
+
+The issue was investigated by reviewing:
+
+- Source customer data
+- Cleaned customer dataset
+- Salesforce field mapping
+- Account-Contact relationship
+- Imported Salesforce record
+- Expected versus actual UAT results
+
+The investigation identified an incorrect Account mapping during the Salesforce import process.
+
+---
+
+## Resolution
 
 The Salesforce Account-Contact mapping was reviewed and corrected.
 
-The affected CRM record was then validated again.
+The affected CRM record was then reviewed again to confirm that the Contact was associated with the correct Account.
 
-### Retest
+---
 
-**TC004-RETEST — Pass**
+## Retest
+
+**Test ID:** TC004-RETEST
+
+**Result:** Pass
+
+**Expected Result:** Contact is associated with the correct Salesforce Account.
+
+**Actual Result:** Contact is associated with the correct Salesforce Account.
+
+---
 
 ## Defect Workflow
 

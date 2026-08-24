@@ -12,10 +12,11 @@ A customer record was created during onboarding but is missing, incomplete, or i
 
 ### Example Symptoms
 
-- Customer exists in source data but not in Salesforce  
-- Salesforce record is missing required information  
-- Customer information does not match the source data  
-- Customer information does not appear correctly in reporting  
+- Customer exists in source data but not in Salesforce
+- Salesforce record is missing required information
+- Customer information does not match the source data
+- Customer information does not appear correctly in reporting
+- Customer is associated with the incorrect Account
 
 ## Investigation Process
 
@@ -23,76 +24,89 @@ A customer record was created during onboarding but is missing, incomplete, or i
 
 Review what the customer onboarding process is expected to accomplish.
 
-**Confirm:**  
-- Required customer information  
-- Expected CRM record  
-- Required fields  
-- Expected reporting result  
+**Confirm:**
+
+- Required customer information
+- Expected CRM record
+- Required fields
+- Expected Account–Contact relationship
+- Expected reporting result
 
 ### Step 2: Verify Source Data
 
-Review the original customer information.
+Review the customer information used for the onboarding process.
 
-**Check:**  
-- Customer name  
-- Email address  
-- Phone  
-- Company  
-- Required fields  
+**Check:**
 
-**Tools:**  
-- Excel  
-- CSV files  
+- Customer name
+- Email address
+- Phone
+- Account Name
+- Required fields
+- Duplicate records
+
+**Tools:**
+
+- Excel
+- SQL
 
 ### Step 3: Validate Customer Record Using SQL
 
-Investigate the customer record.
+Investigate the customer record and data quality.
 
-**Check for:**  
-- Missing values  
-- Incorrect information  
-- Duplicate records  
-- Invalid email information  
+**Check for:**
+
+- Missing values
+- Incorrect information
+- Duplicate records
+- Data consistency issues
 
 ### Step 4: Review API Communication
 
 Use Postman to review request and response behavior where applicable.
 
-**Check:**  
-- Request data  
-- Response status code  
-- Error messages  
+**Check:**
 
-**Common examples:**  
-- 200 OK — Request completed successfully  
-- 400 Bad Request — Submitted information may be missing or invalid  
-- 401 Unauthorized — Authentication issue  
-- 403 Forbidden — Permission issue  
+- Request data
+- Response status code
+- Error messages
+
+**Common examples:**
+
+- 200 OK — Request completed successfully
+- 400 Bad Request — Submitted information may be missing or invalid
+- 401 Unauthorized — Authentication issue
+- 403 Forbidden — Permission issue
+- 404 Not Found — Requested resource could not be found
 
 ### Step 5: Verify Salesforce Mapping
 
 Confirm that customer information maps correctly into Salesforce.
 
 | Source Field | Salesforce Field |
-|--------------|------------------|
-| Name         | Lead Name        |
-| Email        | Email            |
-| Phone        | Phone            |
-| Company      | Company          |
+|---|---|
+| First Name | Contact: First Name |
+| Last Name | Contact: Last Name |
+| Email | Contact: Email |
+| Phone | Contact: Phone |
+| Account Name | Contact: Account |
 
-**Check:**  
-- Correct Salesforce object  
-- Required fields  
-- Correct field mapping  
-- Data appears in the expected record  
+**Check:**
+
+- Correct Salesforce object
+- Required fields
+- Correct field mapping
+- Correct Account–Contact relationship
+- Data appears in the expected record
 
 ### Step 6: Verify Reporting
 
 If the issue affects reporting, compare:
 
-- Source data  
-- Salesforce records  
-- Report results  
+- Source data
+- Salesforce records
+- Salesforce report results
+- Dashboard information
 
 Determine whether the issue originated upstream from the report.
 
@@ -100,49 +114,67 @@ Determine whether the issue originated upstream from the report.
 
 Record:
 
-- Issue identified  
-- Investigation steps  
-- Root cause  
-- Resolution  
-- Prevention steps  
+- Issue identified
+- Investigation steps
+- Root cause
+- Corrective action
+- Retest result
+- Prevention steps
 
 ## Common Root Causes
 
 ### Missing Required Fields
 
-**Example:** Customer email is missing.  
-**Impact:** Salesforce may reject or create an incomplete record.
+**Example:** Customer phone information is missing.
+
+**Impact:** The Salesforce record may be incomplete or require additional investigation.
 
 ### Incorrect Data Mapping
 
-**Example:** Source company information does not map correctly to Salesforce.  
-**Impact:** CRM records may contain incorrect information.
+**Example:** Account information is mapped incorrectly.
+
+**Impact:** A Contact may be associated with the wrong Salesforce Account.
 
 ### Duplicate Records
 
-**Example:** The same customer is submitted more than once.  
+**Example:** The same customer is submitted more than once.
+
 **Impact:** Duplicate CRM records and inaccurate reporting.
 
 ### Permission Issues
 
-**Example:** A user cannot access a Salesforce record.  
+**Example:** A user cannot access a Salesforce record.
+
 **Impact:** Information may exist but cannot be viewed by the user.
 
 ## Resolution Examples
 
 Possible resolutions include:
 
-- Correct customer information  
-- Update field mapping  
-- Remove duplicate records  
-- Verify Salesforce permissions  
-- Re-test the onboarding workflow  
-- Validate reporting results  
+- Correct customer information
+- Update field mapping
+- Remove duplicate records
+- Verify Salesforce permissions
+- Correct Account–Contact relationships
+- Re-test the onboarding workflow
+- Validate reporting results
+
+## UAT and Defect Connection
+
+The project includes a simulated UAT scenario for Account–Contact mapping.
+
+**TC004 — Validate Account–Contact Mapping**
+
+When the mapping issue was identified, it was tracked in Jira as:
+
+**SCOI-12 — Incorrect Salesforce Account Mapping**
+
+The mapping was corrected and the affected UAT scenario was retested successfully.
 
 ## Key Takeaway
 
 CRM synchronization issues should be investigated by following the customer information through the workflow:
 
-**Requirement → Data → API → Salesforce → Reporting**
+**Requirement → Data → API → Salesforce → Reporting → UAT**
 
 This helps identify the point where the expected outcome differs from the actual result.

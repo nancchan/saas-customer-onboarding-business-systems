@@ -2,33 +2,23 @@
 
 ## Project Overview
 
-This project simulates a customer onboarding and implementation environment.
+This project simulates a SaaS customer onboarding process from **business requirements through data preparation, CRM processing, reporting, testing, troubleshooting, and improvement**.
 
-The project focuses on how business requirements, customer information, processes, and systems work together to support a consistent customer onboarding experience.
+I created this project as a self-directed learning exercise to practice applying Business Analysis concepts in a practical business systems environment.
 
-I created this project as a self-directed learning exercise to gain practical experience connecting business analysis with CRM administration, data validation, business intelligence, testing, troubleshooting, and implementation documentation.
-
-The project follows customer information from initial business requirements and data preparation through CRM configuration, validation, reporting, testing, issue investigation, root cause analysis, and process improvement.
-
-The project uses simulated customer data and scenarios and is intended to demonstrate practical understanding of business and systems analysis concepts rather than represent a production implementation.
+The project follows one customer onboarding scenario so that the different tools and activities connect as one overall process.
 
 ---
 
 ## Project Workflow
 
-The project follows a simplified customer onboarding lifecycle:
-
-Business Problem  
-↓  
 Business Requirements  
-↓  
-User Stories & Acceptance Criteria  
 ↓  
 Customer Onboarding Process  
 ↓  
 Customer Data  
 ↓  
-Data Quality & Cleaning  
+Data Quality  
 ↓  
 Data Mapping  
 ↓  
@@ -36,72 +26,69 @@ Salesforce CRM
 ↓  
 SQL Investigation  
 ↓  
+Power BI Analysis  
+↓  
 UAT  
-↓  
-Simulated Defect  
-↓  
-Jira  
 ↓  
 Troubleshooting  
 ↓  
-Root Cause Analysis  
+RCA  
 ↓  
-Correction & Retest  
-↓  
-Process Improvement  
-↓  
-Business Intelligence  
-↓  
-Implementation Handoff  
+Improvement & Handoff
 
-The purpose of the workflow is to demonstrate how a business requirement can move through data preparation, CRM processing, validation, testing, investigation, and improvement.
+---
+
+## Business Analysis Focus
+
+This project demonstrates practice with:
+
+- Business requirements
+- User stories and acceptance criteria
+- Process analysis
+- Data-quality review
+- Data mapping
+- CRM configuration
+- UAT and defect investigation
+- Root cause analysis
+- Process improvement
+- Business and technical documentation
+
+The focus is on understanding the **business process and how systems and data support it**.
 
 ---
 
 ## Tools & Technologies
 
-* Salesforce  
-* Microsoft Excel  
-* SQL  
-* Power BI  
-* Postman  
-* Jira  
-* Confluence  
-* GitHub  
+- **Salesforce** — CRM configuration, data import, validation, reports and dashboards
+- **Excel** — Customer data preparation and data-quality review
+- **SQL** — Customer data investigation and quality checks
+- **Power BI** — Business reporting and analysis
+- **Postman** — Basic API testing and troubleshooting practice
+- **Jira** — Work and defect tracking
+- **Confluence** — Implementation documentation
+- **GitHub** — Project documentation and portfolio organization
 
 ---
 
-## Business Analysis
+## Repository Structure
 
-The project applies basic business analysis practices to understand and document the customer onboarding process.
-
-Activities include:
-
-* Identifying the business problem  
-* Defining business requirements  
-* Creating user stories  
-* Defining acceptance criteria  
-* Mapping the customer onboarding process  
-* Identifying customer data requirements  
-* Identifying data-quality considerations  
-* Mapping business information to CRM fields  
-* Defining expected outcomes for testing  
-* Supporting UAT and issue investigation  
-* Documenting findings and improvement opportunities  
-
-The analysis focuses on understanding what the business process needs to accomplish before considering how systems can support it.
+| Folder | Purpose |
+|---|---|
+| `Documentation` | Requirements, user stories, processes, data quality, mapping, UAT and RCA |
+| `Excel` | Raw and cleaned customer data |
+| `Salesforce` | CRM configuration, data import, validation and reporting |
+| `SQL` | Data investigation and quality checks |
+| `Postman` | API testing practice |
+| `Jira` | Work and defect tracking |
+| `Confluence` | Knowledge base and implementation documentation |
+| `Runbooks` | Troubleshooting procedures |
+| `Incidents` | Simulated issues and investigations |
+| `Business-BI` | Business intelligence analysis and reporting |
 
 ---
 
-## Customer Onboarding Process
+## Key Takeaway
 
-The simulated onboarding process begins with the information required to onboard a customer.
+This project demonstrates how **business requirements, processes, data, systems, reporting, testing, and issue resolution** can connect within one customer onboarding scenario.
 
-The process includes:
-
-1. Customer information collection  
-2. Data-quality review  
-3. Data cleaning and preparation  
-4. Data mapping  
-5. Salesforce CRM processing  
-6. CRM validation
+This is a self-directed learning project representing my developing practical knowledge of Business Analysis and Business Systems work.

@@ -4,7 +4,7 @@
 
 User stories translate the business requirements into practical needs from the perspective of people involved in the customer onboarding process.
 
-The user stories in this project connect the business requirements to the CRM, data, reporting, testing, and troubleshooting activities demonstrated throughout the project.
+The user stories connect the business requirements to the CRM, data, reporting, testing, and troubleshooting activities demonstrated throughout the project.
 
 ---
 
@@ -110,12 +110,10 @@ Helps reduce delays and prevents issues from being resolved without understandin
 
 The user stories connect the business requirements to the implementation activities:
 
-- BR-001 → US-001 → Customer Data  
-- BR-002 → US-002 → Data Cleaning & Data Quality  
-- BR-003 → US-003 → Salesforce CRM & Data Mapping  
-- BR-004 → US-004 → CRM Validation  
-- BR-005 → US-005 → Reporting & Business Intelligence  
-- BR-006 → US-006 → UAT & Testing  
-- BR-007 → US-007 → Troubleshooting & RCA  
-
-This creates a connection between the original business need and the activities completed throughout the project.
+- BR-001 → US-001 → Customer Data
+- BR-002 → US-002 → Data Cleaning & Data Quality
+- BR-003 → US-003 → Salesforce CRM & Data Mapping
+- BR-004 → US-004 → CRM Validation
+- BR-005 → US-005 → Reporting & Business Intelligence
+- BR-006 → US-006 → UAT & Testing
+- BR-007 → US-007 → Troubleshooting & RCA

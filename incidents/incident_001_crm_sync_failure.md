@@ -1,4 +1,4 @@
-# Incident 001: CRM Synchronization / Account Mapping Failure
+# Incident 001: Salesforce Account–Contact Mapping Failure
 
 ## Summary
 
@@ -6,11 +6,13 @@ A simulated CRM synchronization issue was identified during User Acceptance Test
 
 The issue was discovered when the Salesforce record was compared with the validated customer dataset.
 
-## Related UAT
+## Traceability
 
-**Test Case:** TC004
+**UAT:** TC004 — Validate Account–Contact Mapping
 
 **Requirement:** BR-004 — CRM Validation
+
+**Jira:** SCOI-12 — Incorrect Salesforce Account Mapping
 
 **Initial Result:** Fail
 
@@ -34,13 +36,13 @@ The following steps were completed:
 3. Reviewed the cleaned customer data.
 4. Reviewed the Salesforce field mapping.
 5. Compared the Salesforce Contact with the source customer record.
-6. Identified an incorrect Account relationship.
+6. Identified an incorrect Account–Contact relationship.
 7. Corrected the mapping and affected Salesforce record.
 8. Re-tested the affected record.
 
 ## Root Cause
 
-The root cause was incorrect Account-Contact mapping during the Salesforce import process.
+The root cause was incorrect Account–Contact mapping during the Salesforce import process.
 
 The source customer data was correct. The issue occurred during the CRM import and mapping process.
 
@@ -50,7 +52,7 @@ The issue was resolved by:
 
 - Correcting the Salesforce field mapping.
 - Correcting the affected Contact record.
-- Verifying the Account-Contact relationship.
+- Verifying the Account–Contact relationship.
 - Re-testing the affected UAT scenario.
 
 ## Retest Result
@@ -64,12 +66,12 @@ The corrected Contact was associated with the expected Salesforce Account.
 To reduce similar issues in future imports:
 
 - Review field mappings before import.
-- Validate Account-Contact relationships after import.
+- Validate Account–Contact relationships after import.
 - Compare imported records with the source data.
 - Include relationship validation in UAT.
 
 ## Business Analysis Connection
 
-This incident demonstrates how a failed UAT result can lead to defect investigation, root cause analysis, correction, and retesting.
+This incident demonstrates how a failed UAT result can lead to defect tracking, investigation, root cause analysis, correction, and retesting.
 
-**UAT Failure → Defect → Investigation → RCA → Resolution → Retest**
+**UAT Failure → Jira Defect → Investigation → RCA → Resolution → Retest**

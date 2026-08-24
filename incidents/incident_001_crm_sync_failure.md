@@ -1,49 +1,75 @@
-# Incident 001: CRM Synchronization Failure Due to Missing Customer Information
+# Incident 001: CRM Synchronization / Account Mapping Failure
 
 ## Summary
 
-A simulated CRM synchronization issue occurred when customer information required for CRM processing was incomplete.
+A simulated CRM synchronization issue was identified during User Acceptance Testing when a customer Contact was associated with the incorrect Account in Salesforce.
 
-This scenario demonstrates how a support or business systems team can investigate an onboarding issue by reviewing business requirements, source data, field requirements, and CRM mapping.
+The issue was discovered when the Salesforce record was compared with the validated customer dataset.
+
+## Related UAT
+
+**Test Case:** TC004
+
+**Requirement:** BR-004 — CRM Validation
+
+**Initial Result:** Fail
+
+**Retest:** TC004-RETEST — Pass
 
 ## Business Impact
 
-- Customer records contained incomplete information  
-- CRM records could not be created correctly  
-- Customer onboarding was delayed  
-- Downstream reporting could be affected  
+The issue could result in:
+
+- Incorrect CRM records
+- Incorrect Account-level reporting
+- Additional manual investigation
+- Delays during customer onboarding
 
 ## Investigation
 
-Steps performed:
+The following steps were completed:
 
-1. Reviewed customer source data  
-2. Checked required customer information  
-3. Reviewed CRM field requirements  
-4. Compared source data against CRM mapping  
-5. Identified missing customer information  
-6. Reviewed the expected outcome against the actual result  
+1. Reviewed the affected customer record in the source dataset.
+2. Confirmed that the source Account information was correct.
+3. Reviewed the cleaned customer data.
+4. Reviewed the Salesforce field mapping.
+5. Compared the Salesforce Contact with the source customer record.
+6. Identified an incorrect Account relationship.
+7. Corrected the mapping and affected Salesforce record.
+8. Re-tested the affected record.
 
 ## Root Cause
 
-Customer information required for CRM processing was missing from the source data.
+The root cause was incorrect Account-Contact mapping during the Salesforce import process.
+
+The source customer data was correct. The issue occurred during the CRM import and mapping process.
 
 ## Resolution
 
-- Corrected incomplete customer data  
-- Updated data validation checks  
-- Reviewed the CRM mapping  
-- Documented the troubleshooting process  
+The issue was resolved by:
+
+- Correcting the Salesforce field mapping.
+- Correcting the affected Contact record.
+- Verifying the Account-Contact relationship.
+- Re-testing the affected UAT scenario.
+
+## Retest Result
+
+The corrected Contact was associated with the expected Salesforce Account.
+
+**TC004-RETEST: Pass**
 
 ## Prevention
 
-- Validate required fields before CRM import  
-- Maintain accurate field mappings  
-- Perform data-quality checks before onboarding  
-- Validate imported records after processing  
+To reduce similar issues in future imports:
+
+- Review field mappings before import.
+- Validate Account-Contact relationships after import.
+- Compare imported records with the source data.
+- Include relationship validation in UAT.
 
 ## Business Analysis Connection
 
-The issue demonstrates why requirements and data validation should be considered before system processing.
+This incident demonstrates how a failed UAT result can lead to defect investigation, root cause analysis, correction, and retesting.
 
-A missing data requirement at the beginning of the workflow can create problems later in CRM processing and reporting.
+**UAT Failure → Defect → Investigation → RCA → Resolution → Retest**

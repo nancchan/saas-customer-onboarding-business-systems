@@ -16,7 +16,7 @@ Three duplicate records were identified:
 - Sarah Lee
 - Mike Brown
 
-After duplicate records were removed, the cleaned dataset contained **16 unique customer records**.
+After the duplicate records were removed, the cleaned dataset contained **16 unique customer records**.
 
 ## Business Impact
 
@@ -44,19 +44,19 @@ The following steps were completed:
 
 The duplicate records were present in the original customer source data.
 
-The issue was therefore identified as a source-data quality issue rather than a Salesforce configuration issue.
+The issue was therefore identified as a **source-data quality issue**, rather than a Salesforce configuration issue.
 
 ## Resolution
 
 The duplicate records were removed from the cleaned dataset before CRM processing.
 
-The cleaned dataset was then used for:
+The cleaned dataset was then available for:
 
 - Salesforce mapping
 - CRM import
 - SQL investigation
 - Reporting
-- UAT
+- UAT validation
 
 ## Prevention
 

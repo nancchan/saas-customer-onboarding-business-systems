@@ -1,7 +1,9 @@
 SELECT
-    name,
-    email,
-    phone,
-    company
+    [First Name],
+    [Last Name],
+    Email,
+    Phone,
+    [Account Name]
 FROM customers
-WHERE phone = 'UNKNOWN';
+WHERE Phone IS NULL
+   OR Email IS NULL;

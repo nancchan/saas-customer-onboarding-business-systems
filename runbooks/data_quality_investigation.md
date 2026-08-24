@@ -8,66 +8,77 @@ This runbook explains how to investigate customer data issues before CRM onboard
 
 ### Missing Information
 
-**Examples:**  
-- Missing email  
-- Missing phone number  
+**Examples:**
 
-**Investigation:**  
-1. Review customer record  
-2. Identify missing fields  
-3. Update information if available  
-4. Document unresolved information  
+- Missing email
+- Missing phone number
+- Missing required customer information
 
-### Invalid Data
+**Investigation:**
 
-**Examples:**  
-- Incorrect email format  
-- Extra spaces  
-- Incorrect company formatting  
+1. Review the customer record.
+2. Identify missing fields.
+3. Update information if available.
+4. Document unresolved information.
 
-**Investigation:**  
-1. Review source data  
-2. Validate formatting  
-3. Correct inaccurate values  
-4. Recheck the cleaned record  
+### Data Consistency Issues
+
+**Examples:**
+
+- Inconsistent customer information
+- Incorrect Account information
+- Inconsistent company or Account values
+
+**Investigation:**
+
+1. Review the source data.
+2. Compare related customer records.
+3. Validate the information against the expected structure.
+4. Correct inaccurate values.
+5. Recheck the cleaned record.
 
 ### Duplicate Records
 
-**Examples:**  
+**Example:**
+
 Multiple records exist for the same customer.
 
-**Investigation:**  
-1. Compare customer details  
-2. Confirm duplicate records  
-3. Identify the appropriate source record  
-4. Remove or flag duplicate information  
+**Investigation:**
+
+1. Compare customer details.
+2. Confirm duplicate records.
+3. Identify the appropriate source record.
+4. Remove or flag duplicate information.
+5. Recheck the final dataset.
 
 ## Tools Used
 
-- Excel  
-- SQL  
-- Salesforce  
+- Excel
+- SQL
+- Salesforce
 
 ## Business Impact
 
 Data-quality issues can affect:
 
-- CRM records  
-- Customer communication  
-- Reporting  
-- UAT results  
-- Implementation timelines  
+- CRM records
+- Customer communication
+- Reporting
+- UAT results
+- Implementation timelines
 
 ## Final Validation
 
 After corrections:
 
-1. Confirm customer data is accurate  
-2. Verify CRM information  
-3. Check reporting results where applicable  
-4. Document the resolution  
-5. Record any prevention steps  
+1. Confirm customer data is accurate.
+2. Verify CRM information.
+3. Check reporting results where applicable.
+4. Document the resolution.
+5. Record any prevention steps.
 
 ## Key Takeaway
 
 Data quality should be reviewed before information moves downstream into CRM and reporting systems.
+
+**Raw Data → Data Quality Review → Cleaning → Validation → CRM**

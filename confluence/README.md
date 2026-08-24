@@ -2,60 +2,59 @@
 
 ## Overview
 
-Confluence was used to organize and document requirements, implementation activities, testing information, troubleshooting procedures, and supporting project documentation for the simulated SaaS customer onboarding project.
+Confluence was used as a knowledge base for the simulated SaaS customer onboarding project.
 
-The documentation was structured to reflect the implementation lifecycle, from business requirements and customer data preparation through CRM configuration, validation, testing, reporting, and troubleshooting.
+The documentation brings together the business requirements, onboarding process, data preparation, Salesforce configuration, testing, troubleshooting, and implementation findings.
 
 ## Documentation Areas
 
 ### Business & Requirements
 
-- Business Requirements
-- Customer Onboarding Workflow
-- Implementation Process Documentation
+- Business requirements
+- User stories
+- Customer onboarding process
+- Process and implementation documentation
 
 ### Data & CRM
 
-- Customer Data Preparation
-- Customer Data Quality
-- Customer Data Mapping
-- Salesforce CRM Configuration
-- Customer Data Import & Validation
+- Customer data preparation
+- Data-quality findings
+- Data mapping
+- Salesforce configuration
+- CRM validation
 
 ### Testing & Troubleshooting
 
-- User Acceptance Testing (UAT)
-- CRM Synchronization Troubleshooting
-- Incident Root Cause Analysis (RCA)
-- Troubleshooting Procedures
+- UAT test scenarios
+- Defect investigation
+- Troubleshooting procedures
+- Root Cause Analysis (RCA)
 
-### Reporting & Business Intelligence
+### Reporting & Analysis
 
-- Salesforce Reports & Dashboard Validation
-- Business Intelligence Reporting
-- Data Analysis and Business Insights
+- Salesforce reporting
+- Power BI analysis
+- Business insights
 
-## Documentation Structure
+## Implementation Flow
 
-The documentation follows the broader project workflow:
-
-**Requirements → Process → Data → CRM → Validation → Reporting → Troubleshooting**
-
-## Screenshots
-
-- `confluence_space_overview.png` — Confluence project space showing the overall documentation structure.
-- `confluence_requirements.png` — Business requirements and customer onboarding documentation.
-- `confluence_uat.png` — User Acceptance Testing documentation and test case information.
-- `confluence_troubleshooting.png` — Structured troubleshooting documentation.
-
-## What This Demonstrates
-
-- Business requirements documentation
-- Implementation documentation
-- Process documentation
-- Data and CRM documentation
-- UAT documentation
-- Troubleshooting documentation
-- Root-cause analysis documentation
-- Knowledge organization
-- Business and technical process communication
+```text
+Requirements
+    ↓
+Process
+    ↓
+Data
+    ↓
+CRM
+    ↓
+Validation
+    ↓
+Reporting
+    ↓
+UAT
+    ↓
+Defect
+    ↓
+RCA
+    ↓
+Improvement

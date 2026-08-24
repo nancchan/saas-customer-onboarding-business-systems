@@ -41,9 +41,7 @@ The following investigation steps were completed:
 
 The root cause was incorrect field mapping during the Salesforce import process.
 
-The Account information was not mapped to the expected Salesforce Account relationship correctly.
-
-The source data itself was correct, so the issue was identified as a CRM import and mapping issue rather than a source-data quality issue.
+The source customer data was correct. The issue occurred during the CRM import and Account-Contact mapping process.
 
 ## Resolution
 
@@ -86,5 +84,3 @@ This incident demonstrates how a failed UAT result can lead to structured invest
 The process followed:
 
 **UAT Failure → Defect → Investigation → Root Cause → Resolution → Retest → Improvement**
-
-This connects the business requirement to testing, issue investigation, system correction, and validation of the final result.

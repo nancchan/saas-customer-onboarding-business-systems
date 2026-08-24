@@ -29,13 +29,13 @@ The following steps were used to investigate the issue:
 
 ## Possible Root Cause
 
-The simulated discrepancy was caused by inconsistent customer data between the source dataset and the reporting data.
+A possible cause of the simulated discrepancy was inconsistent customer data between the source dataset and the reporting data.
 
 The investigation focused on the underlying data before assuming that the report itself was incorrect.
 
 ## Resolution
 
-The affected customer records were reviewed and the data inconsistency was corrected.
+The affected customer records were reviewed and the simulated data inconsistency was corrected.
 
 The reporting result was then reviewed again to confirm that the customer count matched the expected data.
 

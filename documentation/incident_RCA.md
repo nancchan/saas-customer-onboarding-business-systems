@@ -4,17 +4,19 @@
 
 **Incident:** Incorrect Salesforce Account Mapping
 
-**Related UAT:** TC004
+**Related UAT:** TC004 — Validate Account–Contact Mapping
 
 **Related Requirement:** BR-004 — CRM Validation
 
-**Related Incident:** Incident 001 — CRM Synchronization / Account Mapping Failure
+**Related Jira Defect:** SCOI-12 — Incorrect Salesforce Account Mapping
+
+**Related Incident:** Incident 001 — Salesforce Account–Contact Mapping Failure
 
 ## Issue Description
 
 During UAT, a customer Contact was found to be associated with an incorrect Salesforce Account.
 
-The source customer data contained the correct Account information, but the imported Salesforce record did not match the expected Account relationship.
+The source customer data contained the correct Account information, but the imported Salesforce Contact did not match the expected Account relationship.
 
 ## Business Impact
 
@@ -32,8 +34,8 @@ The following investigation steps were completed:
 1. Reviewed the source customer data.
 2. Reviewed the cleaned customer dataset.
 3. Checked the Salesforce field mapping.
-4. Reviewed the Account-Contact relationship.
-5. Compared the Salesforce record with the source data.
+4. Reviewed the Account–Contact relationship.
+5. Compared the Salesforce Contact with the source data.
 6. Compared the expected result with the actual result.
 7. Identified the incorrect Account mapping.
 
@@ -41,7 +43,7 @@ The following investigation steps were completed:
 
 The root cause was incorrect field mapping during the Salesforce import process.
 
-The source customer data was correct. The issue occurred during the CRM import and Account-Contact mapping process.
+The source customer data was correct. The issue occurred during the CRM import and Account–Contact mapping process.
 
 ## Resolution
 
@@ -49,8 +51,8 @@ The issue was resolved by:
 
 - Reviewing the source data.
 - Correcting the Salesforce field mapping.
-- Reviewing the affected CRM record.
-- Rechecking the Account-Contact relationship.
+- Reviewing the affected CRM Contact.
+- Correcting the Account–Contact relationship.
 - Retesting the affected UAT scenario.
 
 ## Retest Result
@@ -74,13 +76,13 @@ To reduce similar issues in future imports:
 - Review source data before importing.
 - Review field mappings before each import.
 - Perform a small test import where appropriate.
-- Validate Account-Contact relationships after import.
+- Validate Account–Contact relationships after import.
 - Compare imported records against the source data during UAT.
 
 ## Business Analysis Connection
 
-This incident demonstrates how a failed UAT result can lead to structured investigation and improvement.
+This incident demonstrates how a failed UAT result can lead to structured defect tracking, investigation, root cause analysis, resolution, and retesting.
 
 The process followed:
 
-**UAT Failure → Defect → Investigation → Root Cause → Resolution → Retest → Improvement**
+**UAT Failure → Jira Defect → Investigation → Root Cause → Resolution → Retest → Improvement**

@@ -6,6 +6,8 @@ This folder contains the customer data used throughout the simulated SaaS custom
 
 The data was used to practice data cleaning, data-quality review, Salesforce CRM mapping, SQL investigation, reporting, and UAT validation.
 
+The cleaned dataset serves as the common customer dataset used throughout the later stages of the project.
+
 ---
 
 ## Files
@@ -25,7 +27,7 @@ The raw dataset contains **19 records** and includes examples of data-quality is
 
 ### `cleaned_customer.xlsx`
 
-Contains the cleaned dataset prepared for downstream CRM processing and analysis.
+Contains the cleaned dataset prepared for CRM processing, SQL investigation, reporting, and validation.
 
 The cleaned dataset contains **16 unique customer records** after removing 3 duplicate rows.
 
@@ -50,9 +52,9 @@ The raw customer data was reviewed for:
 - Company/account structure
 - General consistency
 
-The cleaned dataset was then used for:
+The cleaned dataset was then used throughout the project for:
 
-**Salesforce → SQL → Power BI → UAT**
+**Salesforce → SQL → Reporting → UAT**
 
 ---
 
@@ -77,4 +79,4 @@ The process follows:
 
 **Raw Data → Data Quality Review → Cleaning → Validation → CRM Mapping**
 
-The cleaned dataset becomes the source used in the later stages of the project.
+The cleaned dataset becomes the common data source used in the later stages of the project.

@@ -1,5 +1,3 @@
-SELECT
-    name,
-    email
+SELECT *
 FROM customers
-WHERE email NOT LIKE '%_@_%._%';
+WHERE Phone IS NULL;

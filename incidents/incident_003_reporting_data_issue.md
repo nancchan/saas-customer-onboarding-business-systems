@@ -2,47 +2,61 @@
 
 ## Summary
 
-A reporting discrepancy was identified where customer counts did not match the expected records.
+A simulated reporting discrepancy was identified where the customer count shown in a report did not match the expected number of customer records.
 
-This scenario demonstrates how reporting issues can require investigation of upstream data rather than simply changing the report itself.
+This scenario demonstrates how a reporting issue may require investigation of the underlying data rather than simply changing the report.
 
 ## Business Impact
 
-- Reported customer numbers were inaccurate  
-- Additional investigation was required  
-- Business users could receive misleading information  
-- The source data required validation  
+The discrepancy could result in:
+
+- Incorrect customer counts
+- Misleading business information
+- Additional investigation
+- Reduced confidence in reporting
 
 ## Investigation
 
-Steps performed:
+The following steps were used to investigate the issue:
 
-1. Reviewed the reporting results  
-2. Compared reporting results against CRM data  
-3. Reviewed customer information using SQL  
-4. Investigated possible data-quality issues  
-5. Compared expected and actual results  
+1. Reviewed the reported customer count.
+2. Compared the report results with the expected customer records.
+3. Reviewed the underlying customer data.
+4. Used SQL to investigate the customer records.
+5. Checked for possible duplicate or missing records.
+6. Compared the source data with the CRM data.
+7. Reviewed the expected and actual results.
 
-## Root Cause
+## Possible Root Cause
 
-The discrepancy was caused by inconsistent customer data between systems and reporting sources.
+The simulated discrepancy was caused by inconsistent customer data between the source dataset and the reporting data.
+
+The investigation focused on the underlying data before assuming that the report itself was incorrect.
 
 ## Resolution
 
-- Reviewed affected records  
-- Corrected data inconsistencies  
-- Verified the customer dataset  
-- Rechecked the expected reporting outcome  
+The affected customer records were reviewed and the data inconsistency was corrected.
+
+The reporting result was then reviewed again to confirm that the customer count matched the expected data.
 
 ## Prevention
 
-- Perform regular data validation  
-- Maintain accurate data mappings  
-- Monitor consistency between systems  
-- Validate reporting data before using it for business decisions  
+To reduce similar reporting issues:
+
+- Validate source data before reporting.
+- Check customer record counts.
+- Investigate duplicates and missing records.
+- Compare reporting data with the source or CRM data.
+- Validate important reports before using them for business decisions.
 
 ## Business Intelligence Connection
 
-The incident demonstrates why business reporting depends on reliable underlying data.
+This scenario demonstrates the relationship between data quality and business reporting.
 
-A dashboard can display information accurately while still producing a misleading business result if the underlying data is incomplete or inconsistent.
+A report can display data correctly while still producing a misleading business result if the underlying data is incomplete or inconsistent.
+
+**Data Quality → CRM/Data Source → Reporting → Investigation → Correction → Validation**
+
+## Note
+
+This is an additional simulated troubleshooting scenario and is separate from the main UAT defect documented in Incident 001.

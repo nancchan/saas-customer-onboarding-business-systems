@@ -1,3 +1,3 @@
 SELECT *
 FROM customers
-WHERE company = 'Salesforce';
+WHERE [Account Name] = 'Salesforce';

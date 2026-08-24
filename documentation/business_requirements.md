@@ -2,9 +2,11 @@
 
 ## Overview
 
-This document defines the basic business requirements for the simulated customer onboarding process.
+This document defines the basic business requirements for the simulated SaaS customer onboarding process.
 
 The requirements provide a foundation for the customer onboarding workflow, CRM configuration, data validation, testing, reporting, and troubleshooting activities completed in this project.
+
+---
 
 ## Business Objective
 
@@ -13,10 +15,13 @@ The objective is to create a consistent customer onboarding process that allows 
 - Collected
 - Reviewed
 - Validated
+- Mapped
 - Stored in the CRM
 - Tested
 - Reported
 - Investigated when issues occur
+
+---
 
 ## Business Requirements
 
@@ -33,7 +38,7 @@ Required information includes:
 
 ### BR-002 — Data Quality
 
-Customer information should be reviewed before CRM import.
+Customer information should be reviewed before CRM processing.
 
 The process should identify:
 
@@ -77,44 +82,85 @@ Potential investigation areas include:
 - API communication
 - Salesforce records
 - Reporting
+- User permissions
+
+---
+
+## Acceptance Criteria
+
+### BR-001 — Customer Information
+
+- Required customer information can be identified before onboarding.
+- Customer records contain the expected customer fields.
+
+### BR-002 — Data Quality
+
+- Duplicate records can be identified.
+- Missing information can be identified.
+- Basic email formatting issues can be identified.
+- Data can be reviewed before CRM processing.
+
+### BR-003 — CRM Processing
+
+- Cleaned customer information can be mapped to Salesforce fields.
+- Customer information can be imported into Salesforce.
+
+### BR-004 — CRM Validation
+
+- Imported records can be compared with the source data.
+- Differences can be identified and investigated.
+
+### BR-005 — Reporting
+
+- Customer information can be displayed in reports.
+- Customer volume and account distribution can be reviewed.
+- Data-quality issues can be identified where applicable.
+
+### BR-006 — Testing
+
+- UAT scenarios are created for key business requirements.
+- Expected and actual results are documented.
+- Test results are recorded as Pass or Fail.
+
+### BR-007 — Issue Investigation
+
+- Failed or unexpected results can be investigated.
+- The investigation identifies the likely root cause.
+- The resolution and prevention steps are documented.
+
+---
 
 ## Business Questions
 
 The project should help answer:
 
-1. Is the customer information complete?
-2. Are duplicate records present?
-3. Was customer information imported correctly?
-4. Can customer information be reported accurately?
-5. Which records require attention?
-6. What should be investigated when the expected result does not occur?
+- Is the customer information complete?
+- Are duplicate records present?
+- Was customer information imported correctly?
+- Can customer information be reported accurately?
+- Which records require attention?
+- What should be investigated when the expected result does not occur?
 
-## Business Analysis Connection
-
-The requirements provide a foundation for the rest of the project.
-
-The project connects:
-
-**Requirements → Process → Data → CRM → Testing → Reporting → Troubleshooting**
-
-This demonstrates how business requirements can be translated into practical system and operational activities.
+---
 
 ## Requirements Traceability
 
-The business requirements are further translated into user stories and acceptance criteria.
+The business requirements connect to the user stories, implementation activities, and testing performed throughout the project.
 
-BR-001 → US-001 → Customer Information
+| Requirement | User Story | Project Area |
+|---|---|---|
+| BR-001 | US-001 | Customer Data |
+| BR-002 | US-002 | Data Quality |
+| BR-003 | US-003 | Salesforce & Data Mapping |
+| BR-004 | US-004 | CRM Validation |
+| BR-005 | US-005 | Reporting |
+| BR-006 | US-006 | UAT & Testing |
+| BR-007 | US-007 | Troubleshooting & RCA |
 
-BR-002 → US-002 → Data Quality
+---
 
-BR-003 → US-003 → Salesforce CRM Processing
+## Business Analysis Connection
 
-BR-004 → US-004 → CRM Validation
+The requirements provide the foundation for the rest of the project.
 
-BR-005 → US-005 → Reporting
-
-BR-006 → US-006 → UAT & Testing
-
-BR-007 → US-007 → Issue Investigation
-
-This traceability connects the original business need to the implementation activities and testing performed throughout the project.
+**Requirements → User Stories → Process → Data → CRM → Testing → Reporting → Troubleshooting → Improvement**

@@ -2,11 +2,11 @@
 
 ## Project Overview
 
-This project simulates a SaaS customer onboarding process from **business requirements through data preparation, CRM processing, reporting, testing, troubleshooting, and improvement**.
+This project simulates a SaaS customer onboarding process from business requirements through data preparation, CRM processing, reporting, testing, troubleshooting, and improvement.
 
-I created this project as a self-directed learning exercise to practice applying Business Analysis concepts in a practical business systems environment.
+I created this project as a self-directed learning exercise to practice applying Business Analysis and Business Systems concepts in a practical business environment.
 
-The project follows one customer onboarding scenario so that the different tools and activities connect as one overall process.
+The project follows one customer onboarding scenario so that the different tools, systems, data, and activities connect as one overall process.
 
 ---
 
@@ -16,25 +16,21 @@ Business Requirements
 ↓  
 Customer Onboarding Process  
 ↓  
-Customer Data  
-↓  
-Data Quality  
+Customer Data & Data Quality  
 ↓  
 Data Mapping  
 ↓  
 Salesforce CRM  
 ↓  
-SQL Investigation  
+SQL Investigation & API Testing  
 ↓  
-Power BI Analysis  
+Power BI Reporting  
 ↓  
 UAT  
 ↓  
-Troubleshooting  
+Defect Investigation & Troubleshooting  
 ↓  
-RCA  
-↓  
-Improvement & Handoff
+RCA → Resolution → Retest
 
 ---
 
@@ -42,53 +38,69 @@ Improvement & Handoff
 
 This project demonstrates practice with:
 
-- Business requirements
-- User stories and acceptance criteria
-- Process analysis
-- Data-quality review
-- Data mapping
-- CRM configuration
-- UAT and defect investigation
-- Root cause analysis
-- Process improvement
-- Business and technical documentation
+* Business requirements
+* User stories and acceptance criteria
+* Process analysis
+* Data quality and data mapping
+* CRM configuration and validation
+* SQL investigation
+* API testing
+* Reporting and data analysis
+* UAT and defect investigation
+* Root cause analysis
+* Process improvement
+* Business and technical documentation
 
-The focus is on understanding the **business process and how systems and data support it**.
+The focus is on understanding how business requirements, processes, systems, and data connect to support a business outcome.
 
 ---
 
 ## Tools & Technologies
 
-- **Salesforce** — CRM configuration, data import, validation, reports and dashboards
-- **Excel** — Customer data preparation and data-quality review
-- **SQL** — Customer data investigation and quality checks
-- **Power BI** — Business reporting and analysis
-- **Postman** — Basic API testing and troubleshooting practice
-- **Jira** — Work and defect tracking
-- **Confluence** — Implementation documentation
-- **GitHub** — Project documentation and portfolio organization
+* Salesforce — CRM configuration, data import, validation, reports and dashboards
+* Excel — Customer data preparation and data-quality review
+* SQL — Data investigation and quality checks
+* Power BI — Business reporting and analysis
+* Postman — API testing and troubleshooting practice
+* Jira — Work and defect tracking
+* Confluence — Implementation documentation
+* GitHub — Project documentation and portfolio organization
 
 ---
 
 ## Repository Structure
 
 | Folder | Purpose |
-|---|---|
-| `Documentation` | Requirements, user stories, processes, data quality, mapping, UAT and RCA |
-| `Excel` | Raw and cleaned customer data |
-| `Salesforce` | CRM configuration, data import, validation and reporting |
-| `SQL` | Data investigation and quality checks |
-| `Postman` | API testing practice |
-| `Jira` | Work and defect tracking |
-| `Confluence` | Knowledge base and implementation documentation |
-| `Runbooks` | Troubleshooting procedures |
-| `Incidents` | Simulated issues and investigations |
-| `Business-BI` | Business intelligence analysis and reporting |
+|--------|---------|
+| Documentation | Requirements, processes, data quality, mapping, UAT and RCA |
+| Excel | Raw and cleaned customer data |
+| Salesforce | CRM configuration, data import, validation and reporting |
+| SQL | Data investigation and quality checks |
+| Postman | API testing practice |
+| powerbi | Power BI reporting and analysis |
+| Jira | Work and defect tracking |
+| Confluence | Implementation documentation |
+| Runbooks | Troubleshooting procedures |
+| Incidents | Simulated issues and investigations |
+
+---
+
+## UAT & Defect Investigation
+
+The project includes a simulated UAT and defect investigation process.
+
+The primary incident involved an incorrect Salesforce Account mapping identified during UAT.
+
+The investigation followed:
+
+**UAT Failure → Defect → Investigation → RCA → Resolution → Retest**
+
+The corrected scenario was successfully re-tested.
 
 ---
 
 ## Key Takeaway
 
-This project demonstrates how **business requirements, processes, data, systems, reporting, testing, and issue resolution** can connect within one customer onboarding scenario.
+This project demonstrates how business requirements, customer data, systems, reporting, testing, and issue resolution can connect within one customer onboarding scenario.
 
 This is a self-directed learning project representing my developing practical knowledge of Business Analysis and Business Systems work.

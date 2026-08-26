@@ -6,15 +6,13 @@ Jira was used to organize implementation work and track a simulated defect ident
 
 The Jira workflow demonstrates how a business issue can be recorded, investigated, resolved, and retested.
 
----
-
 ## Main Defect
 
-### DEF-001 — Incorrect Salesforce Account Mapping
+### SCOI-12 — Incorrect Salesforce Account Mapping
 
 **Related Requirement:** BR-004 — CRM Validation
 
-**Related UAT:** TC004 — Validate Account-Contact Mapping
+**Related UAT:** TC004 — Validate Account–Contact Mapping
 
 **Initial Result:** Fail
 
@@ -22,7 +20,7 @@ The Jira workflow demonstrates how a business issue can be recorded, investigate
 
 During UAT, a customer Contact was found to be associated with an incorrect Salesforce Account.
 
-The source customer data contained the correct Account information, but the Salesforce record did not match the expected Account relationship.
+The source customer data contained the correct Account information, but the Salesforce Contact did not match the expected Account relationship.
 
 ### Business Impact
 
@@ -33,8 +31,6 @@ The issue could result in:
 - Additional manual investigation
 - Delays during customer onboarding
 
----
-
 ## Investigation
 
 The issue was investigated by reviewing:
@@ -42,21 +38,25 @@ The issue was investigated by reviewing:
 - Source customer data
 - Cleaned customer dataset
 - Salesforce field mapping
-- Account-Contact relationship
-- Imported Salesforce record
+- Account–Contact relationship
+- Imported Salesforce Contact
 - Expected versus actual UAT results
 
-The investigation identified an incorrect Account mapping during the Salesforce import process.
+The investigation identified an incorrect Account–Contact relationship.
 
----
+## Root Cause
+
+The source customer data contained the correct Account information.
+
+The issue occurred when the affected Contact was associated with the wrong Salesforce Account during CRM processing.
+
+The Salesforce field mapping was reviewed as part of the investigation.
 
 ## Resolution
 
-The Salesforce Account-Contact mapping was reviewed and corrected.
+The affected Salesforce Contact was reviewed and the Account–Contact relationship was corrected.
 
-The affected CRM record was then reviewed again to confirm that the Contact was associated with the correct Account.
-
----
+The corrected relationship was then verified before retesting.
 
 ## Retest
 
@@ -64,24 +64,22 @@ The affected CRM record was then reviewed again to confirm that the Contact was 
 
 **Result:** Pass
 
-**Expected Result:** Contact is associated with the correct Salesforce Account.
+**Expected Result:** Each Contact is associated with the correct Salesforce Account.
 
-**Actual Result:** Contact is associated with the correct Salesforce Account.
-
----
+**Actual Result:** Account–Contact mapping was corrected and verified.
 
 ## Defect Workflow
 
 ```text
 UAT Failure
     ↓
-DEF-001 Created
+SCOI-12 Created
     ↓
 Investigation
     ↓
 Root Cause Identified
     ↓
-Mapping Corrected
+Account–Contact Relationship Corrected
     ↓
 Retest
     ↓

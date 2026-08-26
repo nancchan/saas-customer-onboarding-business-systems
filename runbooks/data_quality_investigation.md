@@ -4,13 +4,22 @@
 
 This runbook explains how to investigate customer data issues before CRM onboarding and reporting.
 
+## Data Context
+
+The raw customer dataset contained **19 records**.
+
+During data-quality review:
+
+- **3 duplicate records** were identified.
+- The cleaned dataset contained **16 unique customer records**.
+- A missing phone number was also identified during the SQL data-quality review.
+
 ## Common Issues
 
 ### Missing Information
 
 **Examples:**
 
-- Missing email
 - Missing phone number
 - Missing required customer information
 
@@ -27,7 +36,7 @@ This runbook explains how to investigate customer data issues before CRM onboard
 
 - Inconsistent customer information
 - Incorrect Account information
-- Inconsistent company or Account values
+- Inconsistent Account Name values
 
 **Investigation:**
 
@@ -72,10 +81,11 @@ Data-quality issues can affect:
 After corrections:
 
 1. Confirm customer data is accurate.
-2. Verify CRM information.
-3. Check reporting results where applicable.
-4. Document the resolution.
-5. Record any prevention steps.
+2. Verify the cleaned dataset contains the expected records.
+3. Verify CRM information.
+4. Check reporting results where applicable.
+5. Document the resolution.
+6. Record any prevention steps.
 
 ## Key Takeaway
 

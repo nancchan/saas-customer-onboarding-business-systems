@@ -8,9 +8,7 @@ The purpose of the review was to identify issues that could affect customer reco
 
 The raw dataset contained **19 records**.
 
-After removing 3 duplicate rows, the final dataset contains **16 unique customer records**.
-
----
+After removing **3 duplicate rows**, the final dataset contains **16 unique customer records**.
 
 ## Data Quality Review
 
@@ -18,7 +16,7 @@ After removing 3 duplicate rows, the final dataset contains **16 unique customer
 
 **Review:**
 
-Customer records were reviewed using information such as customer name, email address, and account information.
+Customer records were reviewed using information such as customer name, email address, and Account information.
 
 **Result:**
 
@@ -34,20 +32,6 @@ Removing duplicate records helps prevent:
 - Incorrect customer counts
 - Inaccurate reporting
 - Duplicate customer communication
-
----
-
-### Email Validation
-
-**Review:**
-
-Customer email addresses were reviewed for basic formatting and completeness.
-
-**Result:**
-
-Email values were reviewed during data cleaning before CRM processing.
-
----
 
 ### Missing Information
 
@@ -73,11 +57,9 @@ Anna White
 
 The missing phone value was retained as `NULL` rather than creating information that was not available.
 
----
+### Data Structure and Standardization
 
-### Data Standardization
-
-The customer dataset was reviewed to ensure that customer and account information followed a consistent structure.
+The customer dataset was reviewed to ensure that customer and Account information followed a consistent structure.
 
 The final dataset uses:
 
@@ -88,8 +70,6 @@ The final dataset uses:
 - Account Name
 
 This structure was prepared to support CRM field mapping and downstream reporting.
-
----
 
 ## Data Quality Summary
 
@@ -103,8 +83,6 @@ This structure was prepared to support CRM field mapping and downstream reportin
 | Customer / Account Structure | Reviewed and standardized |
 | CRM-Ready Structure | Yes |
 
----
-
 ## Business Impact
 
 Data quality is important during customer onboarding because inaccurate or incomplete information can affect:
@@ -116,11 +94,9 @@ Data quality is important during customer onboarding because inaccurate or incom
 - Data imports
 - Customer onboarding outcomes
 
----
-
 ## Final Outcome
 
-The customer dataset was reviewed for duplicate records, missing information, email formatting, and data structure before CRM processing.
+The customer dataset was reviewed for duplicate records, missing information, and data structure before CRM processing.
 
 The final dataset contains **16 unique customer records** and was prepared for:
 
@@ -130,8 +106,6 @@ The final dataset contains **16 unique customer records** and was prepared for:
 - Business intelligence reporting
 - UAT and validation
 - Troubleshooting scenarios
-
----
 
 ## Business Analysis Connection
 

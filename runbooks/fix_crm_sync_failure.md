@@ -63,7 +63,7 @@ Pay particular attention to the Account–Contact relationship.
 | Last Name | Contact: Last Name |
 | Email | Contact: Email |
 | Phone | Contact: Phone |
-| Account Name | Contact: Account |
+| Account Name | Contact: Account Relationship |
 
 ## Step 6: Identify the Root Cause
 
@@ -84,7 +84,7 @@ Depending on the cause:
 
 - Correct incomplete information
 - Remove duplicate records
-- Correct field mapping
+- Review field mapping
 - Correct the Account–Contact relationship
 - Review Salesforce configuration
 - Review permissions if applicable
@@ -103,7 +103,7 @@ Recheck the workflow after the correction.
 
 ## UAT and Defect Connection
 
-The project includes a simulated Account–Contact mapping failure:
+The project includes a simulated Account–Contact relationship failure:
 
 **TC004 — Validate Account–Contact Mapping**
 
@@ -111,7 +111,9 @@ The issue was tracked in Jira as:
 
 **SCOI-12 — Incorrect Salesforce Account Mapping**
 
-The Account–Contact mapping was corrected and the affected scenario was successfully retested.
+The affected Account–Contact relationship was corrected and the scenario was successfully retested.
+
+**TC004-RETEST — Pass**
 
 ## Step 9: Document
 

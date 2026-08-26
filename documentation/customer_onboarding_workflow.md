@@ -4,11 +4,9 @@
 
 This document outlines the simplified SaaS customer onboarding workflow used throughout this project.
 
-The objective is to demonstrate how customer information progresses from initial requirements and collection through data validation, CRM onboarding, reporting, testing, and ongoing support.
+The objective is to demonstrate how customer information progresses from business requirements and data preparation through CRM processing, reporting, testing, troubleshooting, and improvement.
 
-The workflow provides a foundation for the business requirements, data preparation, Salesforce configuration, testing, and troubleshooting activities demonstrated in the project.
-
----
+The workflow provides the foundation for the business requirements, data preparation, Salesforce configuration, SQL investigation, testing, and troubleshooting activities demonstrated in the project.
 
 ## Customer Onboarding Process
 
@@ -16,11 +14,12 @@ The workflow provides a foundation for the business requirements, data preparati
 
 Customer information is collected before the onboarding process begins.
 
-Typical information includes:
+The dataset includes:
 
-- Customer Name
-- Company
-- Email Address
+- First Name
+- Last Name
+- Account Name
+- Email
 - Phone
 
 The accuracy of this information affects the steps that follow.
@@ -45,12 +44,14 @@ The customer data is cleaned and prepared for CRM processing.
 
 Activities include:
 
-- Removing duplicate rows
+- Identifying and removing duplicate rows
 - Standardizing field structure
-- Separating First Name and Last Name
+- Preparing First Name and Last Name fields
 - Preparing Account Name information
 - Reviewing email and phone values
 - Preparing the CSV for import
+
+The raw dataset contained **19 records**. After duplicate removal, the cleaned dataset contained **16 unique records**.
 
 ### 4. Data Mapping
 
@@ -61,37 +62,44 @@ The primary Salesforce objects used in this project are:
 - Account
 - Contact
 
-The mapping establishes how source data should be represented in Salesforce.
+The mapping establishes how source customer information should be represented in Salesforce, including the Account–Contact relationship.
 
 ### 5. Salesforce CRM
 
 Customer information is imported into Salesforce using the Data Import Wizard.
 
-The imported Contacts are associated with the appropriate Accounts.
+The cleaned dataset contains **16 customer records**, and the Contact import completed with:
 
-The imported records are then reviewed for accuracy.
+- **16 records processed**
+- **0 records failed**
+- **100% progress**
+
+Imported Contacts are associated with the appropriate Salesforce Accounts.
+
+The records are then reviewed for accuracy.
 
 ### 6. SQL Investigation
 
-SQL is used to practice investigating customer data and identifying issues such as:
+SQL is used to investigate customer data and support data-quality analysis.
 
-- Missing information
-- Duplicate records
-- Invalid email formatting
+Checks include:
+
+- Missing phone information
+- Duplicate customer records
 - Customer record lookups
+- Data consistency
 
-SQL investigation supports data-quality review and troubleshooting.
+SQL supports investigation of the underlying customer data before and after CRM processing where applicable.
 
 ### 7. Reporting and Business Intelligence
 
 Customer information is used for reporting and business analysis.
 
-Reporting can be used to review:
+Salesforce reporting is used to review:
 
 - Customer volume
 - Account distribution
-- Data-quality issues
-- Records requiring attention
+- Contact information
 
 Power BI is used for the business intelligence portion of the project.
 
@@ -100,6 +108,10 @@ Power BI is used for the business intelligence portion of the project.
 UAT is used to compare expected results with actual results.
 
 Testing focuses on whether the onboarding process meets the defined business requirements.
+
+One key scenario is:
+
+**TC004 — Validate Account–Contact Mapping**
 
 ### 9. Troubleshooting
 
@@ -110,6 +122,7 @@ Possible investigation areas include:
 - Source data
 - Data quality
 - Data mapping
+- Account–Contact relationship
 - API communication
 - Salesforce records
 - Permissions
@@ -127,6 +140,8 @@ The RCA records:
 - Root cause
 - Resolution
 - Preventive actions
+
+The main simulated incident involved an incorrect Account–Contact relationship identified during UAT.
 
 ### 11. Improvement and Handoff
 

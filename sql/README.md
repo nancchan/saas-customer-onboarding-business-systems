@@ -2,60 +2,62 @@
 
 ## Overview
 
-This folder contains SQL queries used to investigate customer data during the simulated SaaS customer onboarding process.
+This section contains SQL queries used to investigate customer data during the simulated SaaS customer onboarding process.
 
-The objective is to practice reviewing customer records, identifying data-quality issues, and supporting troubleshooting activities before and during CRM processing.
+The objective was to practice reviewing customer records, identifying data-quality issues, and supporting troubleshooting before customer information was processed in Salesforce.
+
+## Data Context
+
+The customer dataset originally contained **19 records**.
+
+During the data-quality review, **3 duplicate records** were identified and removed, resulting in a cleaned dataset containing **16 unique customer records**.
+
+The SQL investigation supports the data-quality and troubleshooting stages of the project.
 
 ## Investigation Scenarios
 
-The SQL queries demonstrate basic customer data investigation, including:
+The SQL queries demonstrate how customer data can be reviewed to identify issues that may affect onboarding.
+
+Examples include:
 
 - Looking up customer records
 - Identifying missing customer information
 - Checking for missing phone numbers
-- Detecting duplicate customer records
-- Reviewing customer and Account information
+- Reviewing email formatting
+- Investigating duplicate customer records
 
-## Data Source
+## SQL Queries
 
-The SQL investigation is based on the customer dataset used throughout the project.
+### Customer Lookup
 
-The customer data includes:
+Used to locate a specific customer or company record.
 
-- First Name
-- Last Name
-- Email
-- Phone
-- Account Name
+### Data Quality Check
 
-The raw dataset contained 19 records. Data-quality review identified duplicate records and missing information. The cleaned dataset contains 16 unique customer records.
+Used to identify records with missing phone information or other data-quality concerns.
 
-## Query Files
+### Invalid Email Check
 
-### `customer_lookup.sql`
+Used to identify email addresses that do not follow the expected email format.
 
-Looks up customer records associated with a specific Account.
+### Missing Customer Information
 
-### `data_quality_check.sql`
+Used to identify records where required customer information is missing.
 
-Checks customer records for missing Email or Phone information.
+### Duplicate Investigation
 
-### `missing_phone_check.sql`
+Used to identify potential duplicate customer records before CRM processing.
 
-Identifies customer records with missing phone numbers.
+## Business Purpose
 
-### `duplicate_customer_check.sql`
+SQL can be used by implementation, operations, support, and business systems teams to investigate customer information during onboarding and troubleshooting.
 
-Identifies duplicate customer records using customer and Account information.
+These queries demonstrate basic data investigation techniques that can help identify issues before they affect CRM processing, reporting, or UAT.
 
 ## Business Analysis Connection
 
-SQL investigation supports Business Analysis and Business Systems work by helping identify data issues that may affect customer onboarding, CRM processing, reporting, or troubleshooting.
+The SQL investigation supports the overall project workflow:
 
-The workflow connects:
+**Raw Data → Data Quality Review → Cleaning → CRM Processing → Reporting → Validation**
 
-**Customer Data → SQL Investigation → Data Quality → CRM Processing → Validation**
-
-## Purpose
-
-These queries demonstrate basic SQL skills for customer data investigation and troubleshooting using realistic customer onboarding scenarios.
+The investigation demonstrates how data can be reviewed and validated before being used by downstream business systems.

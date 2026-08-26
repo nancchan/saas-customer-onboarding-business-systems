@@ -89,7 +89,7 @@ Confirm that customer information maps correctly into Salesforce.
 | Last Name | Contact: Last Name |
 | Email | Contact: Email |
 | Phone | Contact: Phone |
-| Account Name | Contact: Account |
+| Account Name | Contact: Account Relationship |
 
 **Check:**
 
@@ -129,11 +129,11 @@ Record:
 
 **Impact:** The Salesforce record may be incomplete or require additional investigation.
 
-### Incorrect Data Mapping
+### Incorrect Account–Contact Relationship
 
-**Example:** Account information is mapped incorrectly.
+**Example:** A Contact is associated with the wrong Salesforce Account.
 
-**Impact:** A Contact may be associated with the wrong Salesforce Account.
+**Impact:** CRM records and Account-level reporting may be incorrect.
 
 ### Duplicate Records
 
@@ -152,7 +152,7 @@ Record:
 Possible resolutions include:
 
 - Correct customer information
-- Update field mapping
+- Review field mapping
 - Remove duplicate records
 - Verify Salesforce permissions
 - Correct Account–Contact relationships
@@ -165,11 +165,13 @@ The project includes a simulated UAT scenario for Account–Contact mapping.
 
 **TC004 — Validate Account–Contact Mapping**
 
-When the mapping issue was identified, it was tracked in Jira as:
+When the Account–Contact relationship issue was identified, it was tracked in Jira as:
 
 **SCOI-12 — Incorrect Salesforce Account Mapping**
 
-The mapping was corrected and the affected UAT scenario was retested successfully.
+The affected relationship was corrected and the UAT scenario was retested successfully.
+
+**TC004-RETEST — Pass**
 
 ## Key Takeaway
 

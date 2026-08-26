@@ -2,11 +2,9 @@
 
 ## Overview
 
-This document defines the basic business requirements for the simulated SaaS customer onboarding process.
+This document defines the business requirements for the simulated SaaS customer onboarding process.
 
-The requirements provide a foundation for the customer onboarding workflow, CRM configuration, data validation, testing, reporting, and troubleshooting activities completed in this project.
-
----
+The requirements provide a foundation for the customer onboarding workflow, data validation, CRM configuration, testing, reporting, troubleshooting, and implementation activities completed in this project.
 
 ## Business Objective
 
@@ -21,8 +19,6 @@ The objective is to create a consistent customer onboarding process that allows 
 - Reported
 - Investigated when issues occur
 
----
-
 ## Business Requirements
 
 ### BR-001 — Customer Information
@@ -31,8 +27,9 @@ The onboarding process must capture the customer information required to support
 
 Required information includes:
 
-- Customer Name
-- Company
+- First Name
+- Last Name
+- Account Name
 - Email
 - Phone
 
@@ -44,7 +41,7 @@ The process should identify:
 
 - Duplicate records
 - Missing information
-- Invalid email formatting
+- Basic email formatting issues
 - Inconsistent formatting
 
 ### BR-003 — CRM Processing
@@ -53,7 +50,7 @@ Validated customer information should be mapped to the appropriate Salesforce fi
 
 ### BR-004 — CRM Validation
 
-Imported Salesforce records should be reviewed against the source customer information to confirm that the information was transferred correctly.
+Imported Salesforce records should be reviewed against the source customer information to confirm that the information and Account–Contact relationships were transferred correctly.
 
 ### BR-005 — Reporting
 
@@ -62,9 +59,9 @@ Customer information should be available for basic reporting and business analys
 Reporting should help users understand:
 
 - Customer volume
-- Company distribution
-- Data-quality issues
+- Account distribution
 - Records requiring attention
+- Business information available from the customer data
 
 ### BR-006 — Testing
 
@@ -79,12 +76,11 @@ Potential investigation areas include:
 - Source data
 - Data validation
 - Field mapping
+- Account–Contact relationships
 - API communication
 - Salesforce records
 - Reporting
 - User permissions
-
----
 
 ## Acceptance Criteria
 
@@ -108,13 +104,14 @@ Potential investigation areas include:
 ### BR-004 — CRM Validation
 
 - Imported records can be compared with the source data.
+- Account–Contact relationships can be validated.
 - Differences can be identified and investigated.
 
 ### BR-005 — Reporting
 
 - Customer information can be displayed in reports.
-- Customer volume and account distribution can be reviewed.
-- Data-quality issues can be identified where applicable.
+- Customer volume and Account distribution can be reviewed.
+- Records requiring attention can be identified where applicable.
 
 ### BR-006 — Testing
 
@@ -127,8 +124,7 @@ Potential investigation areas include:
 - Failed or unexpected results can be investigated.
 - The investigation identifies the likely root cause.
 - The resolution and prevention steps are documented.
-
----
+- Corrected results can be retested.
 
 ## Business Questions
 
@@ -137,11 +133,10 @@ The project should help answer:
 - Is the customer information complete?
 - Are duplicate records present?
 - Was customer information imported correctly?
+- Are Account–Contact relationships correct?
 - Can customer information be reported accurately?
 - Which records require attention?
 - What should be investigated when the expected result does not occur?
-
----
 
 ## Requirements Traceability
 
@@ -156,8 +151,6 @@ The business requirements connect to the user stories, implementation activities
 | BR-005 | US-005 | Reporting |
 | BR-006 | US-006 | UAT & Testing |
 | BR-007 | US-007 | Troubleshooting & RCA |
-
----
 
 ## Business Analysis Connection
 

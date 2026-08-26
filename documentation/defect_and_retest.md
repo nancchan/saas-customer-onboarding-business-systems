@@ -8,13 +8,11 @@ The issue was documented as a defect so that the problem could be investigated, 
 
 This demonstrates the connection between UAT, defect tracking, troubleshooting, root cause analysis, and validation.
 
----
-
 ## Failed UAT Scenario
 
 **Test ID:** TC004
 
-**Requirement:** BR-005 — Reporting / CRM Validation
+**Requirement:** BR-004 — CRM Validation
 
 **Test Scenario:**
 
@@ -22,17 +20,15 @@ Validate that the imported customer Contact is associated with the correct Sales
 
 **Expected Result:**
 
-The Contact should be associated with the correct Account based on the source customer data.
+Each Contact should be associated with the correct Account based on the source customer data.
 
 **Actual Result:**
 
-The Contact was associated with an incorrect Account.
+One Contact was associated with an incorrect Account.
 
 **Status:**
 
 Failed
-
----
 
 ## Defect
 
@@ -40,18 +36,18 @@ The failed test was treated as a defect requiring investigation.
 
 The defect was documented in Jira for tracking.
 
-**Defect Type:** Data / Field Mapping
+**Defect ID:** SCOI-12 — Incorrect Salesforce Account Mapping
+
+**Defect Type:** CRM / Account–Contact Relationship
 
 **Impact:**
 
-Incorrect Account associations could affect:
+An incorrect Account association could affect:
 
 - CRM accuracy
-- Customer information
 - Account-level reporting
 - Business analysis
-
----
+- Customer onboarding validation
 
 ## Investigation
 
@@ -61,56 +57,50 @@ The investigation reviewed:
 2. Cleaned customer data
 3. Salesforce field mapping
 4. Account–Contact relationship
-5. Imported Salesforce record
+5. Imported Salesforce Contact
 6. Expected versus actual result
-
----
 
 ## Root Cause
 
-The investigation identified an incorrect field mapping during the Salesforce import process.
+The investigation identified an incorrect Account–Contact relationship during CRM processing.
 
-The Account information was not mapped to the expected Account relationship correctly.
-
----
+The source Account information was correct, but the affected Contact was associated with the wrong Salesforce Account.
 
 ## Resolution
 
-The field mapping was corrected and the affected record was reviewed again in Salesforce.
+The affected Salesforce Contact was reviewed and the Account–Contact relationship was corrected.
 
----
+The corrected relationship was then verified before retesting.
 
 ## Retest
 
 The failed UAT scenario was repeated after the correction.
 
+**Test ID:** TC004-RETEST
+
 **Expected Result:**
 
-The Contact is associated with the correct Salesforce Account.
+Each Contact is associated with the correct Salesforce Account.
 
 **Actual Result:**
 
-The Contact is now associated with the correct Salesforce Account.
+Account–Contact mapping was corrected and verified.
 
 **Retest Status:**
 
 Passed
-
----
 
 ## Preventive Action
 
 To reduce the likelihood of similar issues:
 
 - Review field mappings before import
-- Perform a small test import where appropriate
 - Validate Account–Contact relationships after import
 - Compare CRM records against the source data during UAT
-
----
+- Include relationship validation in CRM testing
 
 ## Traceability
 
-**UAT → Defect → Jira → Investigation → RCA → Resolution → Retest**
+**UAT → Jira → Investigation → RCA → Resolution → Retest**
 
 This demonstrates how a business requirement can be validated through testing and how an unexpected result can be investigated and resolved.

@@ -2,13 +2,13 @@
 
 ## Summary
 
-A simulated reporting discrepancy was identified where the customer count shown in a report did not match the expected number of customer records.
+A simulated reporting discrepancy was created to practice investigating a customer count that did not match the expected number of customer records.
 
 This scenario demonstrates how a reporting issue may require investigation of the underlying data rather than simply changing the report.
 
 ## Business Impact
 
-The discrepancy could result in:
+A reporting discrepancy could result in:
 
 - Incorrect customer counts
 - Misleading business information
@@ -17,7 +17,7 @@ The discrepancy could result in:
 
 ## Investigation
 
-The following steps were used to investigate the issue:
+The following steps were used to investigate the simulated issue:
 
 1. Reviewed the reported customer count.
 2. Compared the report results with the expected customer records.

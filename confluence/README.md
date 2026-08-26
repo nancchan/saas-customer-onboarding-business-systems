@@ -38,7 +38,7 @@ The documentation brings together the business requirements, onboarding process,
 
 ## Implementation Flow
 
-Requirements → Process → Data → CRM → Validation → Reporting → UAT → Defect → RCA → Improvement
+**Requirements → Process → Data → CRM → Validation → Reporting → UAT → Defect → RCA → Improvement**
 
 ## What This Demonstrates
 

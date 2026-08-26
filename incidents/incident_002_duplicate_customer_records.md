@@ -37,7 +37,7 @@ The following steps were completed:
 3. Identified repeated customer records.
 4. Confirmed the duplicate entries.
 5. Compared the raw dataset with the cleaned dataset.
-6. Removed the duplicate entries from the cleaned dataset.
+6. Removed the duplicate records from the cleaned dataset.
 7. Confirmed that the cleaned dataset contained 16 unique records.
 
 ## Root Cause
@@ -50,7 +50,7 @@ The issue was therefore identified as a **source-data quality issue**, rather th
 
 The duplicate records were removed from the cleaned dataset before CRM processing.
 
-The cleaned dataset was then available for:
+The cleaned dataset was then used for:
 
 - Salesforce mapping
 - CRM import
@@ -72,4 +72,4 @@ To reduce duplicate records in future onboarding activities:
 
 This scenario demonstrates how a data-quality issue can affect downstream systems and reporting.
 
-**Raw Data → Data Quality Review → Duplicate Identification → Cleaning → CRM Processing**
+**Raw Data → Data Quality Review → Duplicate Identification → Cleaning → CRM Processing → Validation**

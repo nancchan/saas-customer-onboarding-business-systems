@@ -1,4 +1,3 @@
 SELECT *
 FROM customers
-WHERE Email IS NULL
-   OR Phone IS NULL;
+WHERE Phone IS NULL;

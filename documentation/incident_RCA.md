@@ -37,33 +37,36 @@ The following investigation steps were completed:
 4. Reviewed the Account–Contact relationship.
 5. Compared the Salesforce Contact with the source data.
 6. Compared the expected result with the actual result.
-7. Identified the incorrect Account mapping.
+7. Identified the incorrect Account relationship.
 
 ## Root Cause
 
-The root cause was incorrect field mapping during the Salesforce import process.
+The root cause was an incorrect Account–Contact relationship assigned during the Salesforce CRM processing process.
 
-The source customer data was correct. The issue occurred during the CRM import and Account–Contact mapping process.
+The source customer data contained the correct Account information. The issue occurred when the affected Contact was associated with the wrong Salesforce Account.
+
+The field mapping configuration was reviewed as part of the investigation.
 
 ## Resolution
 
 The issue was resolved by:
 
 - Reviewing the source data.
-- Correcting the Salesforce field mapping.
+- Reviewing the Salesforce field mapping.
 - Reviewing the affected CRM Contact.
 - Correcting the Account–Contact relationship.
+- Verifying the corrected Contact record.
 - Retesting the affected UAT scenario.
 
 ## Retest Result
 
-After the mapping was corrected:
+After the Account–Contact relationship was corrected:
 
 **Expected Result:**  
 The Contact is associated with the correct Account.
 
 **Actual Result:**  
-The Contact was associated with the correct Account.
+Account–Contact mapping was corrected and verified.
 
 **Status:** Pass
 
@@ -78,6 +81,7 @@ To reduce similar issues in future imports:
 - Perform a small test import where appropriate.
 - Validate Account–Contact relationships after import.
 - Compare imported records against the source data during UAT.
+- Include relationship validation as part of CRM data validation.
 
 ## Business Analysis Connection
 

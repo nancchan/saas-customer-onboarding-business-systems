@@ -6,8 +6,6 @@ User stories translate the business requirements into practical needs from the p
 
 The user stories connect the business requirements to the CRM, data, reporting, testing, and troubleshooting activities demonstrated throughout the project.
 
----
-
 ## US-001 — Capture Customer Information
 
 **Related Requirement:** BR-001 — Customer Information
@@ -19,8 +17,6 @@ As an onboarding user, I want to capture the required customer information so th
 ### Business Value
 
 Ensures that the onboarding process begins with the information required to create and manage a customer record.
-
----
 
 ## US-002 — Validate Customer Data
 
@@ -34,8 +30,6 @@ As an onboarding user, I want customer information to be reviewed for missing, d
 
 Improves data quality before customer information is processed downstream.
 
----
-
 ## US-003 — Import Customer Information into Salesforce
 
 **Related Requirement:** BR-003 — CRM Processing
@@ -48,21 +42,17 @@ As a CRM administrator, I want validated customer information to be mapped to th
 
 Supports accurate CRM records and reduces import and mapping errors.
 
----
-
 ## US-004 — Validate Imported CRM Records
 
 **Related Requirement:** BR-004 — CRM Validation
 
 ### User Story
 
-As a CRM administrator, I want to compare imported Salesforce records with the source customer data so that I can confirm that customer information was transferred correctly.
+As a CRM administrator, I want to compare imported Salesforce records and Account–Contact relationships with the source customer data so that I can confirm that customer information was transferred and associated correctly.
 
 ### Business Value
 
-Helps identify data-transfer or field-mapping issues before the information is used for reporting or business processes.
-
----
+Helps identify data-transfer, field-mapping, or Account–Contact relationship issues before the information is used for reporting or other business processes.
 
 ## US-005 — Report Customer Information
 
@@ -70,13 +60,11 @@ Helps identify data-transfer or field-mapping issues before the information is u
 
 ### User Story
 
-As a business user, I want customer information to be available through reports and dashboards so that I can understand customer volume, company distribution, and data-quality issues.
+As a business user, I want customer information to be available through reports and dashboards so that I can understand customer volume, Account distribution, and other relevant business information.
 
 ### Business Value
 
 Turns customer data into information that can support business analysis and decision-making.
-
----
 
 ## US-006 — Test the Onboarding Process
 
@@ -90,8 +78,6 @@ As a business user, I want to test the onboarding process against defined expect
 
 Provides evidence that the implemented process works as expected from a business perspective.
 
----
-
 ## US-007 — Investigate Onboarding Issues
 
 **Related Requirement:** BR-007 — Issue Investigation
@@ -103,8 +89,6 @@ As a support or business systems user, I want to investigate onboarding issues a
 ### Business Value
 
 Helps reduce delays and prevents issues from being resolved without understanding their underlying cause.
-
----
 
 ## Traceability
 

@@ -38,7 +38,7 @@ The Power BI analysis is designed to review:
 
 The report provides a visual summary of the customer dataset.
 
-Key analysis includes:
+### Key Analysis
 
 - Total customer count
 - Customer count by Account

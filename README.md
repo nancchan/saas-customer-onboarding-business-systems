@@ -10,7 +10,7 @@ The project follows one customer onboarding scenario so that the tools, systems,
 
 ## Project Workflow
 
-**Business Requirements → Customer Onboarding Process → Customer Data → Data Quality → Data Mapping → Salesforce CRM → SQL & API Testing → Reporting → UAT → Defect Investigation → RCA → Resolution → Retest → Improvement**
+**Business Requirements → Customer Onboarding Process → Customer Data → Data Quality → Data Mapping → Salesforce CRM → SQL & API Testing → Business BI → Reporting → UAT → Defect Investigation → RCA → Resolution → Retest → Improvement**
 
 ## Project Data Flow
 
@@ -22,7 +22,7 @@ During data-quality review:
 - 16 unique customer records remained
 - One customer record contained a missing phone value, which was retained as `NULL`
 
-The cleaned dataset was then prepared for Salesforce processing, SQL investigation, reporting, and UAT.
+The cleaned dataset was then prepared for Salesforce processing, SQL investigation, reporting, Business BI, and UAT.
 
 ## Business Analysis Focus
 
@@ -36,6 +36,7 @@ This project demonstrates practice with:
 - SQL investigation
 - API testing
 - Reporting and data analysis
+- Business BI
 - UAT and defect investigation
 - Root cause analysis
 - Process improvement
@@ -63,7 +64,7 @@ The focus is on understanding how business requirements, processes, systems, and
 | `Salesforce` | CRM configuration, data import, validation and reporting |
 | `SQL` | Data investigation and quality checks |
 | `Postman` | API testing practice |
-| `powerbi` | Power BI reporting and analysis |
+| `powerbi` | Power BI reporting and business analysis |
 | `Jira` | Work and defect tracking |
 | `Confluence` | Implementation documentation |
 | `Runbooks` | Troubleshooting procedures |
@@ -87,6 +88,6 @@ The Account–Contact relationship was corrected and the affected scenario was s
 
 ## Key Takeaway
 
-This project demonstrates how business requirements, customer data, systems, reporting, testing, troubleshooting, and issue resolution can connect within one customer onboarding scenario.
+This project demonstrates how business requirements, customer data, systems, Business BI, reporting, testing, troubleshooting, and issue resolution can connect within one customer onboarding scenario.
 
 This is a self-directed learning project representing my developing practical knowledge of Business Analysis and Business Systems work.

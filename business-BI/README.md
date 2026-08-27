@@ -28,37 +28,91 @@ Using the cleaned dataset maintains consistency with the data used for Salesforc
 
 The Power BI analysis is designed to review:
 
-- Total customer records
+- Customer records
 - Customer distribution by Account
+- Customer count by Account
 - Customer information by Account
-- Customer data completeness
 - Customer onboarding information
+- Interactive customer investigation
 
 ## Power BI Report
 
-The report provides a visual summary of the customer dataset.
+The report provides a visual summary of the cleaned customer dataset.
 
-### Key Analysis
+### Customer Distribution by Account
 
-- Total customer count
-- Customer count by Account
-- Customer-level information
-- Data-quality information where applicable
+A clustered column chart was created to show the distribution of customers across Accounts.
+
+This provides a high-level view of the customer population and Account distribution.
+
+### Customer Count by Account
+
+A table was created to show customer counts by Account and provide more detailed information behind the visual analysis.
+
+### Customer Data Investigation
+
+An interactive Account filter was used to investigate customer records associated with a specific Account.
+
+For example, selecting **Atlassian** filters the report to the selected Account and displays the associated customer records.
 
 ## Data Validation
 
-Power BI results are compared with the validated customer dataset and Salesforce reporting to confirm that:
+The Power BI report uses the cleaned customer dataset produced during the data-quality process.
 
-- Customer counts are consistent.
-- Account information is represented correctly.
-- No unexpected records are included.
-- Report results reflect the underlying customer data.
+The original dataset contained **19 records**.
+
+During the data-quality review, **3 duplicate records** were identified and removed, resulting in **16 unique customer records**.
+
+A missing phone value was also identified during the data-quality review.
+
+Power BI reporting is intended to remain consistent with the cleaned customer dataset used during the Salesforce processing and validation stages.
 
 ## Business Analysis Connection
 
-The Business-BI work demonstrates how validated customer data can be transformed into business information for analysis and decision-making.
+The Business-BI work demonstrates how validated customer data can be transformed into business information for analysis and investigation.
 
-**Customer Data → Data Quality → CRM → Reporting → Business Analysis**
+The report supports:
+
+- Customer distribution analysis
+- Account-level analysis
+- Customer-level investigation
+- Interactive filtering
+- Data-quality awareness
+- Business reporting
+
+**Customer Data → Data Quality → SQL Investigation → Data Cleaning → CRM → Business BI → Validation**
+
+## Evidence
+
+### Data Source
+
+`data_source.png`
+
+Shows the customer dataset used as the source for the Power BI report.
+
+### Customer Distribution by Account
+
+`customer_distribution_by_account.png`
+
+Shows the distribution of customer records across Accounts.
+
+### Customer Count by Account
+
+`customer_count_by_account.png`
+
+Shows customer counts by Account.
+
+### Customer Data Investigation
+
+`customer_data_investigation.png`
+
+Shows an interactive Account investigation using the Power BI report.
+
+### Business BI Dashboard
+
+`business_bi_dashboard.png`
+
+Shows the completed Business BI report layout and visual analysis.
 
 ## Skills Demonstrated
 
@@ -70,3 +124,5 @@ The Business-BI work demonstrates how validated customer data can be transformed
 - Business reporting
 - Customer analysis
 - Account analysis
+- Interactive filtering
+- Customer data investigation
